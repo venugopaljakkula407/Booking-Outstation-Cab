@@ -31,4 +31,3 @@ test.describe('Scenario 1 - Outstation Cab Booking', () => {
     expect(price).not.toBeNull();
   });
 });
-//tkti6rturu6ri76ri6rtr
