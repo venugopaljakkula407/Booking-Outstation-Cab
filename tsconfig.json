@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "types": ["node"],
+  },
+  "include": [
+    "pages/**/*.ts",
+    "tests/**/*.ts",
+    "fixtures/**/*.ts",
+    "test-data/**/*.ts",
+    "playwright.config.ts"
+  ]
+}
+//compilerOptions[this is main configuration block] → how TypeScript should behave
+//include → which files to compile
+
+
+//target ->specifies the javascript version output,ES2020 includes modern featureslike async,await.
+//module->define module systm,common js used node.js(require)
+//lib[built-in libraries]->Es2020 inclueds modern api,async,await,modern js methods
+//strict->TypeScript becomes more strict:No undefined mistakes,Must define types clearly,Fewer runtime error
+//esModuleInterop->Helps import compatibility,makes import easier and cleaner
+//outdir ->output directory complile js files[ts - js store  in/dist]
+//rootdir ->root folder of sorce code[complier treats current folder as base]
+//** -subfolder
+//*.ts ->all typescript files'
+
+
+
+
+

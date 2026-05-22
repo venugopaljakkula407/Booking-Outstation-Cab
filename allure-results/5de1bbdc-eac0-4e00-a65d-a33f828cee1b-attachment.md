@@ -1,0 +1,78 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: scenario3.spec.ts >> Scenario 3 - Hotel Room Selector >> Test Case 2 - Extract All Adult Values by Incrementing
+- Location: tests\scenario3.spec.ts:11:7
+
+# Error details
+
+```
+Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.easemytrip.com/hotels/
+Call log:
+  - navigating to "https://www.easemytrip.com/hotels/", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - heading "This site can’t be reached" [level=1] [ref=e7]
+    - paragraph [ref=e8]:
+      - strong [ref=e9]: www.easemytrip.com
+      - text: ’s DNS address could not be found. Diagnosing the problem.
+    - generic [ref=e10]:
+      - paragraph
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link "Try running Windows Network Diagnostics" [ref=e13] [cursor=pointer]:
+            - /url: javascript:diagnoseErrors()
+          - text: .
+    - generic [ref=e14]: DNS_PROBE_STARTED
+  - button "Reload" [ref=e17] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | import { Page } from '@playwright/test';
+  2  | /**
+  3  |  * BasePage
+  4  |  * All Page Object classes extend this. Provides common helpers
+  5  |  * (navigate, waitForPageLoad) and holds the `page` reference.
+  6  |  */
+  7  | export class BasePage {
+  8  |   protected page: Page;//store browser page here [protected means child cls use it]
+  9  | 
+  10 |   constructor(page: Page) {
+  11 |     this.page = page;
+  12 |   }
+  13 | 
+  14 |   async navigate(path: string = ''): Promise<void> {
+> 15 |     await this.page.goto(path);
+     |                     ^ Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.easemytrip.com/hotels/
+  16 |   }
+  17 | 
+  18 |   async waitForPageLoad(): Promise<void> {
+  19 |     await this.page.waitForLoadState('domcontentloaded');
+  20 |   }
+  21 | 
+  22 |   async getTitle(): Promise<string> {
+  23 |     return this.page.title();
+  24 |   }
+  25 | }
+  26 | //page -> browser tab
+  27 | //class -> blue print of object
+  28 | //protected ->accessible in child class but not outside
+  29 | //constructor -> initalize the object
+  30 | //async/await -> handleasynchronous operations like page navigate,elements interactions
+  31 | //promise<void> -> no return value
+  32 | //promise<string> -> returns text
+  33 | //this.page ->refers to page/browser instance passed to constructor,used for all interactions in page ojects.
+```

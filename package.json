@@ -1,0 +1,24 @@
+{
+  "name": "playwright-pom-framework",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript framework with Page Object Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:scenario1": "npx playwright test tests/scenario1.spec.ts",
+    "test:scenario2": "npx playwright test tests/scenario2.spec.ts",
+    "test:scenario3": "npx playwright test tests/scenario3.spec.ts",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "allure-commandline": "^2.41.0",
+    "allure-playwright": "^3.8.0"
+  }
+}

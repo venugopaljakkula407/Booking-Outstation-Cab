@@ -1,0 +1,945 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: scenario2.spec.ts >> Scenario 2 - Gift Card Purchase >> Test Case 1 - Navigation and Gift Card Form Fill
+- Location: tests\scenario2.spec.ts:5:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://www.easemytrip.com/", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e6]:
+      - generic:
+        - link "easemytrip.com":
+          - /url: https://www.easemytrip.com/
+      - generic [ref=e7]:
+        - generic [ref=e10]: EMTMate Agent travel solution
+        - generic [ref=e13]: EMTDesk Corporate travel program
+        - generic [ref=e16]: EMTRoyale For Prime Members
+        - generic [ref=e19]: Explore Bharat A Tour to India
+        - generic [ref=e22]: Join EMTPro Enjoy More Benefits
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e26]:
+              - generic [ref=e28]:
+                - text: Call Support
+                - 'link "Tel : 011 - 43131313, 43030303" [ref=e29] [cursor=pointer]':
+                  - /url: tel:011 - 43131313, 43030303
+              - generic [ref=e31]:
+                - text: Mail Support
+                - link "Care@easemytrip.com" [ref=e32] [cursor=pointer]:
+                  - /url: mailto:care@easemytrip.com
+            - generic [ref=e34]:
+              - generic [ref=e35]:
+                - img "Flag"
+              - text: India
+            - img "Toggle contrast mode" [ref=e38] [cursor=pointer]
+          - generic [ref=e39]:
+            - generic [ref=e40]: Login or Signup
+            - generic [ref=e41]:
+              - generic [ref=e43]: Customer Login Login & check bookings
+              - link "Corporate Travel Login corporate account" [ref=e44] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/corporate/
+                - generic [ref=e45]: Corporate Travel Login corporate account
+              - link "Agent Login Login your agent account" [ref=e46] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/agents
+                - generic [ref=e47]: Agent Login Login your agent account
+              - link "My Booking Manage your bookings here" [ref=e48] [cursor=pointer]:
+                - /url: https://mybookings.easemytrip.com/
+                - generic [ref=e49]: My Booking Manage your bookings here
+          - generic [ref=e51]: "Agent ID: EMT0007895"
+    - list [ref=e55]:
+      - listitem [ref=e56]:
+        - link "Flights" [ref=e57] [cursor=pointer]:
+          - /url: /flights.html
+          - text: Flights
+      - listitem [ref=e58]:
+        - link "Hotels" [ref=e59] [cursor=pointer]:
+          - /url: /hotels/
+          - text: Hotels
+      - listitem [ref=e60]:
+        - link "Trains" [ref=e61] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/railways/
+          - text: Trains
+      - listitem [ref=e62]:
+        - link "Bus" [ref=e63] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/bus/
+          - text: Bus
+      - listitem [ref=e64]:
+        - link "Holidays" [ref=e65] [cursor=pointer]:
+          - /url: /holidays/
+          - text: Holidays
+      - listitem [ref=e66]:
+        - link "Cabs" [ref=e67] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/cabs/
+          - text: Cabs
+      - listitem [ref=e68]:
+        - link "ACTIVITIES" [ref=e69] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/activities/
+          - text: ACTIVITIES
+      - listitem [ref=e70]:
+        - link "Visa" [ref=e71] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/visa-booking/
+          - text: Visa
+      - listitem [ref=e72]:
+        - generic [ref=e73]: More
+        - generic [ref=e74]:
+          - link "Monuments Majestic Monuments of India" [ref=e75] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/monuments/
+            - generic [ref=e76]:
+              - generic [ref=e77]: Monuments
+              - text: Majestic Monuments of India
+          - link "EaseMyTrip Cards Apply now to get Rewards" [ref=e78] [cursor=pointer]:
+            - /url: https://www.emtcards.in/
+            - generic [ref=e79]: EaseMyTrip Cards Apply now to get Rewards
+          - link "EasyEloped For Romantic Getaways" [ref=e80] [cursor=pointer]:
+            - /url: https://www.easyeloped.com/
+            - generic [ref=e81]: EasyEloped For Romantic Getaways
+          - link "EasyDarshan Spiritual Tours in India" [ref=e82] [cursor=pointer]:
+            - /url: https://www.easydarshan.com/
+            - generic [ref=e83]: EasyDarshan Spiritual Tours in India
+          - link "Badrinath For Divine Blessings" [ref=e84] [cursor=pointer]:
+            - /url: https://www.badrinath.com/
+            - generic [ref=e85]: Badrinath For Divine Blessings
+          - link "Airport Experience Enjoy airport service" [ref=e86] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/airport-experience.html
+            - generic [ref=e87]: Airport Experience Enjoy airport service
+          - link "Gift Card Buy giftcards here" [ref=e88] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/giftcard/
+            - generic [ref=e89]: Gift Card Buy giftcards here
+          - link "EaseMy Check Best latest offers" [ref=e90] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/deals.html
+            - generic [ref=e91]: EaseMy Check Best latest offers
+    - navigation [ref=e92]:
+      - generic [ref=e93]:
+        - text: ✖
+        - img "Logo" [ref=e95]
+      - list
+  - generic [ref=e97]:
+    - text: ×
+    - generic [ref=e99]:
+      - generic [ref=e101]:
+        - paragraph [ref=e102]: Benefits
+        - list [ref=e103]:
+          - listitem [ref=e104]: Special Fare Available
+          - listitem [ref=e105]: Easy Cancellation
+          - listitem [ref=e106]: Make Checkouts Easy
+      - generic [ref=e107]:
+        - heading "Authenticate yourself" [level=2] [ref=e108]
+        - generic [ref=e109]:
+          - combobox [ref=e111]:
+            - option "Choose your category"
+            - option "Indian Army" [selected]
+            - option "Indian Air Force"
+            - option "Indian Navy"
+            - option "Indian Coast Guard"
+            - option "Paramilitry Force"
+          - textbox "Service ID/Number" [ref=e113]
+          - button "Continue" [ref=e114]
+        - generic [ref=e115]:
+          - img "Info" [ref=e116]
+          - paragraph [ref=e117]: Proof in the form of Valid Photo ID and relevant Military ID has to be presented at the time of check-in, failing which passenger will be denied boarding.
+  - generic [ref=e121]:
+    - generic [ref=e122]:
+      - tablist "Filter by trip type" [ref=e123]:
+        - tab "One Way" [ref=e124] [cursor=pointer]
+        - tab "Round Trip" [ref=e125] [cursor=pointer]
+        - tab "Multicity" [ref=e126] [cursor=pointer]
+      - heading "Search Lowest Price" [level=1] [ref=e127]
+    - generic [ref=e129]:
+      - generic [ref=e131] [cursor=pointer]:
+        - paragraph [ref=e132]: From
+        - textbox "From" [ref=e133]
+        - paragraph [ref=e134]: Indira Gandhi International Airport
+      - generic [ref=e137] [cursor=pointer]:
+        - paragraph [ref=e138]: To
+        - textbox "To" [ref=e139]
+        - paragraph [ref=e140]: Chhatrapati Shivaji Internation Airport
+      - generic [ref=e142] [cursor=pointer]:
+        - paragraph [ref=e143]: Departure Date
+        - textbox "Departure" [ref=e144]
+        - paragraph [ref=e145]:
+          - img "Calender" [ref=e146]
+        - paragraph
+      - generic [ref=e148] [cursor=pointer]:
+        - paragraph [ref=e149]: Return Date
+        - textbox "Return" [ref=e150]
+        - paragraph [ref=e151]:
+          - text: Book a round trip
+          - text: to save more
+        - paragraph [ref=e152]:
+          - img "Calender" [ref=e153]
+        - paragraph
+      - generic [ref=e155] [cursor=pointer]:
+        - paragraph [ref=e156]: Traveller & Class
+        - paragraph [ref=e157]:
+          - generic [ref=e158]: "1"
+          - generic [ref=e159]: Traveller
+        - paragraph [ref=e161]: Economy
+      - button "Search" [ref=e163] [cursor=pointer]
+    - navigation [ref=e164]:
+      - generic [ref=e165]: "Special Fares (Optional):"
+      - list [ref=e166]:
+        - listitem [ref=e167]:
+          - generic [ref=e168] [cursor=pointer]:
+            - text: EaseMyTrip Corporate
+            - text: Enjoy Up to 15% more savings
+            - checkbox "EaseMyTrip Corporate Enjoy Up to 15% more savings" [ref=e169]
+        - listitem [ref=e171]:
+          - generic [ref=e172] [cursor=pointer]:
+            - text: Defence Forces
+            - text: Up to ₹600 Off
+            - checkbox "Defence Forces Up to ₹600 Off" [ref=e173]
+        - listitem [ref=e175]:
+          - generic [ref=e176] [cursor=pointer]:
+            - text: Students
+            - text: Extra baggage, discount
+            - checkbox "Students Extra baggage, discount" [ref=e177]
+        - listitem [ref=e179]:
+          - generic [ref=e180] [cursor=pointer]:
+            - text: Senior Citizens
+            - text: Up to ₹600 Off
+            - checkbox "Senior Citizens Up to ₹600 Off" [ref=e181]
+        - listitem [ref=e183]:
+          - generic [ref=e184] [cursor=pointer]:
+            - text: Doctors Nurses
+            - text: Up to ₹600 Off
+            - checkbox "Doctors Nurses Up to ₹600 Off" [ref=e185]
+  - generic [ref=e188]:
+    - generic [ref=e189]: Discover More
+    - list [ref=e190]:
+      - listitem [ref=e191]:
+        - link "Best Flight Deals" [ref=e192] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/offers/flights.html
+          - text: Best Flight Deals
+      - listitem [ref=e193]:
+        - link "Monuments" [ref=e194] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/monuments/
+          - text: Monuments
+      - listitem [ref=e195]:
+        - link "Metro" [ref=e196] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/metro/
+          - text: Metro
+      - listitem [ref=e197]:
+        - link "Gift Cards" [ref=e198] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/giftcard/
+          - text: Gift Cards
+      - listitem [ref=e199]:
+        - link "EMT Cards" [ref=e200] [cursor=pointer]:
+          - /url: https://www.emtcards.in/
+          - text: EMT Cards
+      - listitem [ref=e201]:
+        - link "Forex Cash & Cards" [ref=e202] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/forex-cash-cards.html
+          - text: Forex Cash & Cards
+      - listitem [ref=e203]:
+        - link "EMT Airport Experience" [ref=e204] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/airport-experience.html?new
+          - text: EMT Airport Experience
+  - generic [ref=e208]:
+    - generic [ref=e209]:
+      - generic [ref=e211]: Exclusive Offers
+      - tablist "Filter offers by product" [ref=e212]:
+        - tab "Best Offers" [ref=e213] [cursor=pointer]
+        - tab "Bank Offers" [ref=e214] [cursor=pointer]: Bank Offers
+        - tab "Flight" [ref=e215] [cursor=pointer]: Flight
+        - tab "Hotel" [ref=e216] [cursor=pointer]: Hotel
+        - tab "Bus" [ref=e217] [cursor=pointer]: Bus
+        - tab "Holidays" [ref=e218] [cursor=pointer]: Holidays
+        - tab "Cabs" [ref=e219] [cursor=pointer]: Cabs
+        - link "View all" [ref=e220] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/deals.html
+          - text: View All Offers
+    - generic [ref=e224]:
+      - 'link "Discover Bharat the world can wait. Use Code: EMTBHARAT Copy Code Sale Enjoy INR 500 OFF* on Domestic Flights & Save 15% on Hotels & Holidays Across India Valid till: 31st May 2026" [ref=e226] [cursor=pointer]':
+        - /url: https://www.easemytrip.com/offers/discoverbharat.html
+        - generic [ref=e227]:
+          - generic [ref=e228]:
+            - generic [ref=e229]: Discover Bharat
+            - generic [ref=e230]: the world can wait.
+            - generic [ref=e232]:
+              - generic [ref=e233]: "Use Code:"
+              - generic [ref=e234]:
+                - generic [ref=e235]: EMTBHARAT
+                - img "Copy Code" [ref=e237]
+          - img "Sale" [ref=e239]
+        - generic [ref=e240]: Enjoy INR 500 OFF* on Domestic Flights & Save 15% on Hotels & Holidays Across India
+        - generic [ref=e241]: "Valid till: 31st May 2026"
+      - 'link "Great Connections Fest by IndiGo Airlines Air India Express Enjoy Connecting Flights Across the IndiGo Airlines Network at Fares Starting from INR 3,999* Valid till: 15th May 2026" [ref=e243] [cursor=pointer]':
+        - /url: https://www.easemytrip.com/offers/indigo-new.html
+        - generic [ref=e244]:
+          - generic [ref=e245]:
+            - generic [ref=e246]: Great Connections Fest by
+            - generic [ref=e247]: IndiGo Airlines
+          - img "Air India Express" [ref=e249]
+        - generic [ref=e250]: Enjoy Connecting Flights Across the IndiGo Airlines Network at Fares Starting from INR 3,999*
+        - generic [ref=e251]: "Valid till: 15th May 2026"
+      - 'link "Enjoy Daily Flights with Air India Express Air India Express Xperience Comfort with 500 Daily Flights to Top Destinations with Air India Express Valid till: 31st May 2026" [ref=e253] [cursor=pointer]':
+        - /url: https://www.easemytrip.com/offers/airindia-express-daily-flight.html
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - generic [ref=e256]: Enjoy Daily Flights
+            - generic [ref=e257]: with Air India Express
+          - img "Air India Express" [ref=e259]
+        - generic [ref=e260]: Xperience Comfort with 500 Daily Flights to Top Destinations with Air India Express
+        - generic [ref=e261]: "Valid till: 31st May 2026"
+      - link "Switch to Solar & Get Benefits with Terra Rex Solar Now Upgrade to Solar Energy & Get Flat INR 10,000 OFF* on Solar Installation for EaseMyTrip Customer Know more" [ref=e263] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/solar-lead
+        - generic [ref=e264]:
+          - generic [ref=e265]:
+            - generic [ref=e266]: Switch to Solar &
+            - generic [ref=e267]:
+              - text: Get Benefits with
+              - text: Terra Rex
+          - img "Solar" [ref=e269]
+        - generic [ref=e270]: Now Upgrade to Solar Energy & Get Flat INR 10,000 OFF* on Solar Installation for EaseMyTrip Customer
+        - generic [ref=e271]: Know more
+      - 'link "Fly Mumbai to Tokyo with Air India Sale Enjoy Non-Stop 4X Weekly Flights from Mumbai to Tokyo (Haneda) with Air India Travel Period: From 15th Jun 2026" [ref=e273] [cursor=pointer]':
+        - /url: https://www.easemytrip.com/offers/air-india-route-network.html
+        - generic [ref=e274]:
+          - generic [ref=e275]:
+            - generic [ref=e276]: Fly Mumbai to Tokyo
+            - generic [ref=e277]: with Air India
+          - img "Sale" [ref=e279]
+        - generic [ref=e280]: Enjoy Non-Stop 4X Weekly Flights from Mumbai to Tokyo (Haneda) with Air India
+        - generic [ref=e281]: "Travel Period: From 15th Jun 2026"
+      - 'link "Book Flights with No Convenience Fee* Use Code: EMTNCF Copy Code Sale Enjoy Travelling to Your Favourite Destination with No Convenience Fee* Valid till: 31st May 2026" [ref=e283] [cursor=pointer]':
+        - /url: https://www.easemytrip.com/offers/no-convenience-fee.html
+        - generic [ref=e284]:
+          - generic [ref=e285]:
+            - generic [ref=e286]: Book Flights with
+            - generic [ref=e287]: No Convenience Fee*
+            - generic [ref=e289]:
+              - generic [ref=e290]: "Use Code:"
+              - generic [ref=e291]:
+                - generic [ref=e292]: EMTNCF
+                - img "Copy Code" [ref=e294]
+          - img "Sale" [ref=e296]
+        - generic [ref=e297]: Enjoy Travelling to Your Favourite Destination with No Convenience Fee*
+        - generic [ref=e298]: "Valid till: 31st May 2026"
+      - 'link "Unbeatable Deal on ITA Airways Sale Fly to Europe, the UK, USA & Canada with ITA Airways and Grab Up to 10% OFF* Valid till: 31st Dec 2026" [ref=e300] [cursor=pointer]':
+        - /url: https://www.easemytrip.com/offers/ita-airways.html
+        - generic [ref=e301]:
+          - generic [ref=e302]:
+            - generic [ref=e303]: Unbeatable Deal on
+            - generic [ref=e304]: ITA Airways
+          - img "Sale" [ref=e306]
+        - generic [ref=e307]: Fly to Europe, the UK, USA & Canada with ITA Airways and Grab Up to 10% OFF*
+        - generic [ref=e308]: "Valid till: 31st Dec 2026"
+      - 'link "Non-Stop Flights with IndiGo Airlines Sale Enjoy Non-Stop Flights Between Delhi-Kathmandu and Delhi-Colombo Travel Period: from 29th Mar 2026" [ref=e310] [cursor=pointer]':
+        - /url: https://www.easemytrip.com/offers/indigo-direct-flights.html
+        - generic [ref=e311]:
+          - generic [ref=e312]:
+            - generic [ref=e313]: Non-Stop Flights with
+            - generic [ref=e314]: IndiGo Airlines
+          - img "Sale" [ref=e316]
+        - generic [ref=e317]: Enjoy Non-Stop Flights Between Delhi-Kathmandu and Delhi-Colombo
+        - generic [ref=e318]: "Travel Period: from 29th Mar 2026"
+      - 'link "Special Deals on J&K Mastercard Use Code: EMTJKMC Copy Code Enjoy Incredible Travel Discounts with J&K Mastercard Debit & Credit Card EMI Valid till: 31st May, 2026" [ref=e320] [cursor=pointer]':
+        - /url: https://www.easemytrip.com/offers/j-and-k-bank-cards.html
+        - generic [ref=e321]:
+          - generic [ref=e322]:
+            - generic [ref=e323]: Special Deals on
+            - generic [ref=e324]: J&K Mastercard
+            - generic [ref=e326]:
+              - generic [ref=e327]: "Use Code:"
+              - generic [ref=e328]:
+                - generic [ref=e329]: EMTJKMC
+                - img "Copy Code" [ref=e331]
+          - img [ref=e333]
+        - generic [ref=e334]: Enjoy Incredible Travel Discounts with J&K Mastercard Debit & Credit Card EMI
+        - generic [ref=e335]: "Valid till: 31st May, 2026"
+      - link "Grab Special Deals on Lufthansa & SWISS Airlines Sale Enjoy Up to 15% OFF* on Flight Bookings with Lufthansa & SWISS Airlines BOOK NOW" [ref=e337] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/offers/lufthansa-airlines.html
+        - generic [ref=e338]:
+          - generic [ref=e339]:
+            - generic [ref=e340]: Grab Special Deals on
+            - generic [ref=e341]: Lufthansa & SWISS Airlines
+          - img "Sale" [ref=e343]
+        - generic [ref=e344]: Enjoy Up to 15% OFF* on Flight Bookings with Lufthansa & SWISS Airlines
+        - generic [ref=e345]: BOOK NOW
+      - link "Protect Baggage with Blue Ribbon Bags Sale Protect your checked-in baggage with EaseMyTrip's Blue Ribbon Protection. Know More" [ref=e347] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/deals/blue-ribbon/
+        - generic [ref=e348]:
+          - generic [ref=e349]:
+            - generic [ref=e350]: Protect Baggage with
+            - generic [ref=e351]:
+              - text: Blue Ribbon
+              - text: Bags
+          - img "Sale" [ref=e353]
+        - generic [ref=e354]: Protect your checked-in baggage with EaseMyTrip's Blue Ribbon Protection.
+        - generic [ref=e355]: Know More
+      - 'link "Best Deals for Your International Travel Use Code: INTEMT Copy Code EMT Offers Best Deals on Airlines like EGYPTAIR, ITA Airways, British Airways, KLM and many more. Book Now" [ref=e357] [cursor=pointer]':
+        - /url: https://www.easemytrip.com/deals/airlines-sale/
+        - generic [ref=e358]:
+          - generic [ref=e359]:
+            - generic [ref=e360]: Best Deals for Your
+            - generic [ref=e361]: International Travel
+            - generic [ref=e363]:
+              - generic [ref=e364]: "Use Code:"
+              - generic [ref=e365]:
+                - generic [ref=e366]: INTEMT
+                - img "Copy Code" [ref=e368]
+          - img "EMT Offers" [ref=e370]
+        - generic [ref=e371]: Best Deals on Airlines like EGYPTAIR, ITA Airways, British Airways, KLM and many more.
+        - generic [ref=e372]: Book Now
+      - link "Exclusive Deals for Student Travellers EMT Offers Special student discounts and extra baggage allowance on popular international airlines Book Now" [ref=e374] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/student-offer.html
+        - generic [ref=e375]:
+          - generic [ref=e376]:
+            - generic [ref=e377]: Exclusive Deals for
+            - generic [ref=e378]: Student Travellers
+          - img "EMT Offers" [ref=e380]
+        - generic [ref=e381]: Special student discounts and extra baggage allowance on popular international airlines
+        - generic [ref=e382]: Book Now
+      - link "Introducing Lowest Price Guarantee On Hotel Double Refund Find Better Hotel Price Anywhere Else & Get Double Refund on the Price Difference Book Now" [ref=e384] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/deals/lowest-price-guarantee/
+        - generic [ref=e385]:
+          - generic [ref=e386]:
+            - generic [ref=e387]: Introducing
+            - generic [ref=e388]: Lowest Price Guarantee
+            - generic [ref=e389]: On Hotel
+          - img "Double Refund" [ref=e391]
+        - generic [ref=e392]: Find Better Hotel Price Anywhere Else & Get Double Refund on the Price Difference
+        - generic [ref=e393]: Book Now
+      - link "Earn up to Rs. 2000 with Invite & Earn Invite & Earn Now Earn Money by Inviting Your Friends to EaseMyTrip Up to Rs. 2000 Inviting Now" [ref=e395] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/refer
+        - generic [ref=e396]:
+          - generic [ref=e397]:
+            - generic [ref=e398]: Earn up to Rs. 2000 with
+            - generic [ref=e399]: Invite & Earn
+          - img "Invite & Earn" [ref=e401]
+        - generic [ref=e402]: Now Earn Money by Inviting Your Friends to EaseMyTrip Up to Rs. 2000
+        - generic [ref=e403]: Inviting Now
+      - 'link "New User Deal on First Flight Use Code: EMTFIRST Copy Code First Booking Register and Get Discount on Booking First Flight with Us Valid till: 31st May 2026" [ref=e405] [cursor=pointer]':
+        - /url: https://www.easemytrip.com/offers/new-user.html?CouponCode=emtfirst
+        - generic [ref=e406]:
+          - generic [ref=e407]:
+            - generic [ref=e408]: New User Deal on
+            - generic [ref=e409]: First Flight
+            - generic [ref=e411]:
+              - generic [ref=e412]: "Use Code:"
+              - generic [ref=e413]:
+                - generic [ref=e414]: EMTFIRST
+                - img "Copy Code" [ref=e416]
+          - img "First Booking" [ref=e418]
+        - generic [ref=e419]: Register and Get Discount on Booking First Flight with Us
+        - generic [ref=e420]: "Valid till: 31st May 2026"
+  - generic [ref=e423]:
+    - button "Previous slide" [ref=e424] [cursor=pointer]
+    - generic:
+      - generic:
+        - link "Addons":
+          - /url: https://www.easemytrip.com/flights/add-ons/
+          - img "Addons"
+        - link "EMT Foundation":
+          - /url: https://www.easemytrip.com/emtfoundation
+          - img "EMT Foundation"
+        - link "Addons":
+          - /url: https://www.easemytrip.com/flights/add-ons/
+          - img "Addons"
+    - button "Next slide" [ref=e425] [cursor=pointer]
+  - generic [ref=e427]:
+    - generic [ref=e429]: Our Airline Partners
+    - generic [ref=e430]:
+      - link "Air India" [ref=e431] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/flights/airline/air-india/
+        - img
+        - generic [ref=e432]:
+          - text: Air India
+          - img [ref=e433]
+      - link "Malaysia Airlines" [ref=e435] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/flights/airline/malaysia-airlines/
+        - img
+        - generic [ref=e436]:
+          - text: Malaysia Airlines
+          - img [ref=e437]
+      - link "Gulf Air" [ref=e439] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/flights/airline/gulf-air/
+        - img
+        - generic [ref=e440]:
+          - text: Gulf Air
+          - img [ref=e441]
+  - generic [ref=e443]:
+    - generic [ref=e444]:
+      - generic [ref=e446]: Top Flight Routes
+      - generic [ref=e447]:
+        - link "Top Route Chennai Flight Mumbai MAA-BOM" [ref=e448] [cursor=pointer]:
+          - /url: https://flight.easemytrip.com/FlightList/Index?org=MAA-Chennai, India ,&dept=BOM-Mumbai, India ,&adt=1&chd=0&inf=0&cabin=0&airline=Any&deptDT=17/05/2026&arrDT=undefined&isOneway=true&isDomestic=false
+          - generic [ref=e449]:
+            - img "Top Route"
+          - generic [ref=e450]:
+            - generic [ref=e451]:
+              - text: Chennai
+              - generic:
+                - img "Flight"
+              - text: Mumbai
+            - generic [ref=e452]: MAA-BOM
+        - link "Top Route Delhi Flight Ahmedabad DEL-AMD" [ref=e453] [cursor=pointer]:
+          - /url: https://flight.easemytrip.com/FlightList/Index?org=DEL-Delhi, India ,&dept=AMD-Ahmedabad, India ,&adt=1&chd=0&inf=0&cabin=0&airline=Any&deptDT=17/05/2026&arrDT=undefined&isOneway=true&isDomestic=false
+          - generic [ref=e454]:
+            - img "Top Route"
+          - generic [ref=e455]:
+            - generic [ref=e456]:
+              - text: Delhi
+              - generic:
+                - img "Flight"
+              - text: Ahmedabad
+            - generic [ref=e457]: DEL-AMD
+        - link "Top Route Delhi Flight Lucknow DEL-LKO" [ref=e458] [cursor=pointer]:
+          - /url: https://flight.easemytrip.com/FlightList/Index?org=DEL-Delhi, India ,&dept=LKO-Lucknow, India ,&adt=1&chd=0&inf=0&cabin=0&airline=Any&deptDT=17/05/2026&arrDT=undefined&isOneway=true&isDomestic=false
+          - generic [ref=e459]:
+            - img "Top Route"
+          - generic [ref=e460]:
+            - generic [ref=e461]:
+              - text: Delhi
+              - generic:
+                - img "Flight"
+              - text: Lucknow
+            - generic [ref=e462]: DEL-LKO
+        - link "Top Route Mumbai Flight Chennai BOM-MAA" [ref=e463] [cursor=pointer]:
+          - /url: https://flight.easemytrip.com/FlightList/Index?org=BOM-Mumbai, India ,&dept=MAA-Chennai, India ,&adt=1&chd=0&inf=0&cabin=0&airline=Any&deptDT=17/05/2026&arrDT=undefined&isOneway=true&isDomestic=false
+          - generic [ref=e464]:
+            - img "Top Route"
+          - generic [ref=e465]:
+            - generic [ref=e466]:
+              - text: Mumbai
+              - generic:
+                - img "Flight"
+              - text: Chennai
+            - generic [ref=e467]: BOM-MAA
+        - link "Top Route Mumbai Flight Dubai BOM-DXB" [ref=e468] [cursor=pointer]:
+          - /url: https://flight.easemytrip.com/FlightList/Index?org=BOM-Mumbai, India ,&dept=DXB-Dubai, United Arab Emirates ,&adt=1&chd=0&inf=0&cabin=0&airline=Any&deptDT=17/05/2026&arrDT=undefined&isOneway=true&isDomestic=false
+          - generic [ref=e469]:
+            - img "Top Route"
+          - generic [ref=e470]:
+            - generic [ref=e471]:
+              - text: Mumbai
+              - generic:
+                - img "Flight"
+              - text: Dubai
+            - generic [ref=e472]: BOM-DXB
+        - link "Top Route Mumbai Flight Kolkata BOM-CCU" [ref=e473] [cursor=pointer]:
+          - /url: https://flight.easemytrip.com/FlightList/Index?org=BOM-Mumbai, India ,&dept=CCU-Kolkata, India ,&adt=1&chd=0&inf=0&cabin=0&airline=Any&deptDT=17/05/2026&arrDT=undefined&isOneway=true&isDomestic=false
+          - generic [ref=e474]:
+            - img "Top Route"
+          - generic [ref=e475]:
+            - generic [ref=e476]:
+              - text: Mumbai
+              - generic:
+                - img "Flight"
+              - text: Kolkata
+            - generic [ref=e477]: BOM-CCU
+        - link "Top Route Hyderabad Flight Bangalore HYD-BLR" [ref=e478] [cursor=pointer]:
+          - /url: https://flight.easemytrip.com/FlightList/Index?org=HYD-Hyderabad, India ,&dept=BLR-Bangalore, India ,&adt=1&chd=0&inf=0&cabin=0&airline=Any&deptDT=17/05/2026&arrDT=undefined&isOneway=true&isDomestic=false
+          - generic [ref=e479]:
+            - img "Top Route"
+          - generic [ref=e480]:
+            - generic [ref=e481]:
+              - text: Hyderabad
+              - generic:
+                - img "Flight"
+              - text: Bangalore
+            - generic [ref=e482]: HYD-BLR
+        - link "Top Route Mumbai Flight Jaipur BOM-JAI" [ref=e483] [cursor=pointer]:
+          - /url: https://flight.easemytrip.com/FlightList/Index?org=BOM-Mumbai, India ,&dept=JAI-Jaipur, India ,&adt=1&chd=0&inf=0&cabin=0&airline=Any&deptDT=17/05/2026&arrDT=undefined&isOneway=true&isDomestic=false
+          - generic [ref=e484]:
+            - img "Top Route"
+          - generic [ref=e485]:
+            - generic [ref=e486]:
+              - text: Mumbai
+              - generic:
+                - img "Flight"
+              - text: Jaipur
+            - generic [ref=e487]: BOM-JAI
+        - link "Top Route Delhi Flight Dubai DEL-DXB" [ref=e488] [cursor=pointer]:
+          - /url: https://flight.easemytrip.com/FlightList/Index?org=DEL-Delhi, India ,&dept=DXB-Dubai, United Arab Emirates ,&adt=1&chd=0&inf=0&cabin=0&airline=Any&deptDT=17/05/2026&arrDT=undefined&isOneway=true&isDomestic=false
+          - generic [ref=e489]:
+            - img "Top Route"
+          - generic [ref=e490]:
+            - generic [ref=e491]:
+              - text: Delhi
+              - generic:
+                - img "Flight"
+              - text: Dubai
+            - generic [ref=e492]: DEL-DXB
+    - generic [ref=e494]:
+      - generic [ref=e495]:
+        - generic [ref=e496]:
+          - img "Important Info"
+        - generic [ref=e497]:
+          - generic [ref=e498]: "Important Info:"
+          - generic [ref=e499]: To cancel/claim refund or reschedule/modify your booking.
+          - link "Click here..." [ref=e501] [cursor=pointer]:
+            - /url: https://mybookings.easemytrip.com/
+      - generic [ref=e502]:
+        - generic [ref=e503]:
+          - img "Travel Guide"
+        - generic [ref=e504]:
+          - generic [ref=e505]: Airline Notifications
+          - generic [ref=e506]:
+            - text: Get instant flight updates, notifications and travel alerts from airlines to remain informed
+            - link "Click here..." [ref=e508] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/airlines-daily-updates.html
+  - generic [ref=e510]:
+    - generic [ref=e512]: Trending Tourist Destinations
+    - generic [ref=e513]:
+      - link "Andaman Andaman" [ref=e514] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/holidays/andaman-tours-packages/
+        - generic [ref=e515]:
+          - img "Andaman"
+        - generic [ref=e516]: Andaman
+      - link "Kerala Kerala" [ref=e517] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/holidays/kerala-tours-packages/
+        - generic [ref=e518]:
+          - img "Kerala"
+        - generic [ref=e519]: Kerala
+      - link "Kashmir Kashmir" [ref=e520] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/holidays/kashmir-tours-packages/
+        - generic [ref=e521]:
+          - img "Kashmir"
+        - generic [ref=e522]: Kashmir
+      - link "Jaipur Rajasthan" [ref=e523] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/holidays/rajasthan-tours-packages/
+        - generic [ref=e524]:
+          - img "Jaipur"
+        - generic [ref=e525]: Rajasthan
+      - link "Jaipur Bhutan" [ref=e526] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/holidays/bhutan-tours-packages/
+        - generic [ref=e527]:
+          - img "Jaipur"
+        - generic [ref=e528]: Bhutan
+      - link "Paris Europe" [ref=e529] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/holidays/europe-tours-packages/
+        - generic [ref=e530]:
+          - img "Paris"
+        - generic [ref=e531]: Europe
+      - link "Bali Bali" [ref=e532] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/holidays/bali-tours-packages/
+        - generic [ref=e533]:
+          - img "Bali"
+        - generic [ref=e534]: Bali
+      - link "Dubai Dubai" [ref=e535] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/holidays/dubai-tours-packages/
+        - generic [ref=e536]:
+          - img "Dubai"
+        - generic [ref=e537]: Dubai
+      - link "Dubai Vietnam" [ref=e538] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/holidays/vietnam-tours-packages/
+        - generic [ref=e539]:
+          - img "Dubai"
+        - generic [ref=e540]: Vietnam
+      - link "Dubai Sri Lanka" [ref=e541] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/holidays/sri-lanka-tours-packages/
+        - generic [ref=e542]:
+          - img "Dubai"
+        - generic [ref=e543]: Sri Lanka
+  - generic [ref=e545]:
+    - generic [ref=e547]: Favourite places to stay
+    - generic [ref=e548]:
+      - link "Delhi Explore Delhi Hotel" [ref=e549] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/hotels-in-delhi/
+        - generic [ref=e550]: Delhi
+        - generic [ref=e551]: Explore
+        - generic [ref=e552]:
+          - img "Delhi Hotel"
+      - link "Mumbai Explore Mumbai Hotel" [ref=e553] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/hotels-in-mumbai/
+        - generic [ref=e554]: Mumbai
+        - generic [ref=e555]: Explore
+        - generic [ref=e556]:
+          - img "Mumbai Hotel"
+      - link "Bangalore Explore Bangalore Hotel" [ref=e557] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/hotels-in-bangalore/
+        - generic [ref=e558]: Bangalore
+        - generic [ref=e559]: Explore
+        - generic [ref=e560]:
+          - img "Bangalore Hotel"
+      - link "Jaipur Explore Jaipur Hotel" [ref=e561] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/hotels-in-jaipur/
+        - generic [ref=e562]: Jaipur
+        - generic [ref=e563]: Explore
+        - generic [ref=e564]:
+          - img "Jaipur Hotel"
+      - link "Chennai Explore Chennai Hotel" [ref=e565] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/hotels-in-chennai/
+        - generic [ref=e566]: Chennai
+        - generic [ref=e567]: Explore
+        - generic [ref=e568]:
+          - img "Chennai Hotel"
+    - link "View All" [ref=e570] [cursor=pointer]:
+      - /url: https://www.easemytrip.com/hotels/
+  - generic [ref=e572]:
+    - generic [ref=e574]: Enjoy Fresh Travel Blogs
+    - generic [ref=e576]:
+      - article [ref=e577]:
+        - generic [ref=e579]: Travel Hotels
+        - generic [ref=e580]:
+          - heading "Best Honeymoon Hotels in 2026" [level=3] [ref=e581]
+          - link "Read More ➞" [ref=e582] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/blog/best-honeymoon-hotels-2026
+      - article [ref=e583]:
+        - generic [ref=e585]: Travel Tips
+        - generic [ref=e586]:
+          - heading "All-Inclusive Vacation Packages 2026 - Best Family Packages" [level=3] [ref=e587]
+          - link "Read More ➞" [ref=e588] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/blog/all-inclusive-vacation-packages-2026-best-family-packages
+      - article [ref=e589]:
+        - generic [ref=e591]: International
+        - generic [ref=e592]:
+          - heading "Top Trekking Destinations for Mountain Hiking & Trekking Trips" [level=3] [ref=e593]
+          - link "Read More ➞" [ref=e594] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/blog/top-trekking-destinations-mountain-hiking-trips
+      - article [ref=e595]:
+        - generic [ref=e597]: International
+        - generic [ref=e598]:
+          - heading "Visa Requirements 2026 - Complete Travel Documents Guide" [level=3] [ref=e599]
+          - link "Read More ➞" [ref=e600] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/blog/visa-requirements-2026-complete-guide
+    - link "View All" [ref=e602] [cursor=pointer]:
+      - /url: https://www.easemytrip.com/blog/
+  - generic [ref=e605]:
+    - generic [ref=e606]:
+      - generic [ref=e607]: Why book with us?
+      - link "Trustpilot" [ref=e610] [cursor=pointer]:
+        - /url: https://www.trustpilot.com/review/easemytrip.com
+    - generic [ref=e611]:
+      - generic [ref=e612]:
+        - img "Easy Booking"
+        - generic [ref=e613]: Easy Booking
+        - generic [ref=e614]: We offer easy and convenient flight bookings with attractive offers.
+      - generic [ref=e615]:
+        - img "Lowest Price"
+        - generic [ref=e616]: Lowest Price
+        - generic [ref=e617]: We ensure low rates on hotel reservation, holiday packages and on flight tickets.
+      - generic [ref=e618]:
+        - img "Instant Refund"
+        - generic [ref=e619]: Instant Refund
+        - generic [ref=e620]: Get instant refunds effortlessly on your travel bookings with us.
+      - generic [ref=e621]:
+        - img "24/7 Support"
+        - generic [ref=e622]: 24/7 Support
+        - generic [ref=e623]: Get assistance 24/7 on any kind of travel related query. We are happy to assist you.
+      - generic [ref=e624]:
+        - img "Exciting Deals"
+        - generic [ref=e625]: Exciting Deals
+        - generic [ref=e626]: Enjoy exciting deals on flights, hotels, buses, car rental and tour packages.
+    - link "Trustpilot" [ref=e629] [cursor=pointer]:
+      - /url: https://www.trustpilot.com/review/easemytrip.com
+  - generic [ref=e631]:
+    - generic [ref=e633]: Search Flights, Hotels, Bus and Holiday Packages
+    - generic [ref=e634]: EaseMyTrip is one of the largest online travel platforms in India, and a trusted name in the Indian travel industry. With our "EaseMy Travel" approach, we offer end-to-end travel solutions including flight bookings, hotels, buses, trains, cabs, and holiday packages, along with value-added services.
+    - generic [ref=e635]: We understand that planning a trip can be overwhelming, so we have simplified the process to make it easy for you to find the perfect travel deals that suit your needs. Our website is user-friendly and provides a wide range of options to choose from. Whether you're planning a family vacation, a solo adventure, or a business trip, we have you covered with our comprehensive travel packages. From flights to hotels, car rentals to holiday packages, we offer everything you need to make your trip a success.
+    - generic [ref=e636]: We believe in transparency and honesty in all our dealings. We do not charge any hidden fees, and our prices are always competitive. With EaseMyTrip, you can be assured of getting the best travel deals in the market. If you're looking for a hassle-free and affordable way to plan your next trip, look no further than EaseMyTrip. We promise to make your travel experience a memorable one.
+  - generic [ref=e637]:
+    - generic [ref=e640]:
+      - generic [ref=e641]:
+        - list [ref=e643]:
+          - listitem [ref=e644] [cursor=pointer]: OUR OFFERINGS
+          - listitem [ref=e645] [cursor=pointer]: QUICK LINKS
+          - listitem [ref=e646] [cursor=pointer]: POPULAR DESTINATION
+          - listitem [ref=e647] [cursor=pointer]: INTERNATIONAL DESTINATION
+          - listitem [ref=e648] [cursor=pointer]: POPULAR AIRLINE
+          - listitem [ref=e649] [cursor=pointer]: CONNECT WITH US
+          - listitem [ref=e650] [cursor=pointer]: OFFERS
+          - listitem [ref=e651] [cursor=pointer]: EMT INSIGHTS
+          - listitem [ref=e652] [cursor=pointer]: MEDIA
+          - link "INVESTOR RELATIONS" [ref=e653] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/investor-relations.html
+          - link "CURRENT OPENINGS" [ref=e654] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/career.html
+        - generic [ref=e656]:
+          - paragraph [ref=e657]: Make your travel easy with a wide range of products and services.
+          - list [ref=e659]:
+            - listitem [ref=e660]:
+              - link "Flights" [ref=e661] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/flights/
+            - listitem [ref=e662]:
+              - link "Hotels" [ref=e663] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/hotels/
+            - listitem [ref=e664]:
+              - link "Trains" [ref=e665] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/railways/
+            - listitem [ref=e666]:
+              - link "Holidays" [ref=e667] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/holidays/
+            - listitem [ref=e668]:
+              - link "Bus" [ref=e669] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/bus/
+            - listitem [ref=e670]:
+              - link "Flight Status" [ref=e671] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/flights/flight-status/
+            - listitem [ref=e672]:
+              - link "Cabs" [ref=e673] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/cabs/
+            - listitem [ref=e674]:
+              - link "Airlines" [ref=e675] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/directory/airlines.html
+            - listitem [ref=e676]:
+              - link "Airports" [ref=e677] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/directory/airports-in-india.html
+            - listitem [ref=e678]:
+              - link "Travel Guides" [ref=e679] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/travel-guides.html
+            - listitem [ref=e680]:
+              - link "Check PNR Status" [ref=e681] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/railways/pnr-status/
+            - listitem [ref=e682]:
+              - link "EMT PRO" [ref=e683] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/emtpro
+            - listitem [ref=e684]:
+              - link "Activities" [ref=e685] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/activities/
+            - listitem [ref=e686]:
+              - link "Travel Updates" [ref=e687] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/travel-updates.html
+            - listitem [ref=e688]:
+              - link "Corporate Travel" [ref=e689] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/corporate
+            - listitem [ref=e690]:
+              - link "Blog" [ref=e691] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/blog
+            - listitem [ref=e692]:
+              - link "Flight Check-in" [ref=e693] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/flights/web-check-in/
+            - listitem [ref=e694]:
+              - link "VIP Cabs" [ref=e695] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/bookvipcabs.html
+            - listitem [ref=e696]:
+              - link "Refer & Earn" [ref=e697] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/refer
+                - text: Refer & Earn
+      - generic [ref=e698]:
+        - generic [ref=e699]:
+          - generic [ref=e700]:
+            - img "EaseMyTrip Logo"
+          - paragraph [ref=e702]: EaseMyTrip offers 'End to End' travel solutions including air tickets for more than 400 international and domestic airlines, hotel bookings for nearly 1 million hotels in India and abroad, cab booking with 4000+ cab operators, bus tickets with 2000+ bus operators, and railway tickets in India for all major cities.
+        - generic [ref=e703]:
+          - generic [ref=e704]: Download EaseMyTrip App
+          - generic [ref=e706]:
+            - link "Google Play" [ref=e708] [cursor=pointer]:
+              - /url: //play.google.com/store/apps/details?id=com.easemytrip.android
+              - img "Google Play"
+            - link "App Store" [ref=e710] [cursor=pointer]:
+              - /url: https://itunes.apple.com/in/app/easemytrip-flight-booking/id1053030595?mt=8
+              - img "App Store"
+        - generic [ref=e711]:
+          - generic [ref=e712]: SCAN QR CODE
+          - generic [ref=e715]:
+            - img "Scan QR"
+    - generic [ref=e716]:
+      - generic [ref=e717]: Copyright © 2026 EaseMyTrip
+      - generic [ref=e718]:
+        - img "IATA Code"
+  - generic [ref=e720]:
+    - text: ×
+    - generic [ref=e721]: Cookies Policy
+    - generic [ref=e722]:
+      - generic [ref=e723]: (Revised as of March 3, 2023)
+      - generic [ref=e724]: EaseMyTrip respects the confidentiality of your data and strives to ensure the highest level of protection. Despite the measures we are taking to protect your information, any measures that we apply will not have any effect if you neglect data security
+      - generic [ref=e725]:
+        - text: "This Cookie Policy applies to the EaseMyTrip It supplements Privacy Policy, which may be accessed here:"
+        - link "Privacy Policy." [ref=e726] [cursor=pointer]:
+          - /url: /privacy-policy.html
+      - generic [ref=e727]: You do not have to accept all of the cookies used by the EaseMyTrip website. If you reject certain cookies, however, you may not be able to use some of the features of the EaseMyTrip website. Please note that by deleting or blocking cookies that are strictly necessary for the performance of the website, it may not function correctly, and you may not be able to access certain areas of the EaseMyTrip website.
+      - generic [ref=e728]: What Are Cookies?
+      - generic [ref=e729]: Cookies are text files with small pieces of data â€” like a username and password â€” that are used to identify your device as you use a network. Specific cookies known as HTTP cookies are used to identify specific users and improve your web browsing experience. Data stored in a cookie is created by the server upon your connection. This data is labeled with an ID unique to you and your device.
+      - generic [ref=e730]: How do EaseMyTrip use them?
+      - generic [ref=e731]: EaseMyTrip uses cookies and similar technologies to collect information about the use of our website and Apps in order to make them function effectively and also to improve our website visitorsâ€™ experience when they browse our website and App user experience.
+      - generic [ref=e732]: We use session cookies to make it easier for you to navigate our sites and our Apps. A session cookie expires when you close your browser or an App on your device. A persistent cookie remains on your hard drive for an extended period of time and can be used when you return to our site to help identify you or allow you to log in, or on other third-party sites to communicate to you via online-marketing channels. If you reject cookies, you may still use our site or our App, but your ability to use some areas of the site will be limited and you may need to re-enter your personal data when you register.
+      - generic [ref=e733]: We use a third-party tracking service that uses cookies and similar technology to track non-personal or private information on users and mobile applications taken together (where applicable).
+      - generic [ref=e734]: "EaseMyTrip website use the following types of cookies on our website:"
+      - generic [ref=e735]:
+        - text: 1. Strictly necessary cookies
+        - text: Some cookies we place on your browser ensure that the EaseMyTrip website delivers you information and services securely and optimally.
+        - text: 2. Performance cookies
+        - text: EaseMyTrip uses a number of tools that monitor visitor behavior on our website to help us improve our information and services.
+        - text: 3. Advertising cookies
+        - text: We sometimes use tracking pixels that set cookies to assist with delivering online advertising.
+        - text: 4. Third-party cookies
+        - text: Some of our webpages use third-party services or software, such as maps, online videos or social networking features.
+        - text: You may specify in your browser settings what kind of cookies your device should get and store. Our system will send cookies upon visiting the web sites, unless you have disabled this option in your browser settings. However, certain special features of the Project and (or) Service may not be available to you, if you do not accept our cookies policy.
+        - text: "All major browsers offer advice and guidance for managing cookies to be available in your browser. To simplify the configuration of cookies please find links to cookies instructions in some browsers and advertising agents below:"
+        - text: Internet Explorer
+        - link "https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies" [ref=e736] [cursor=pointer]:
+          - /url: https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies
+        - text: Google Chrome
+        - link "https://policies.google.com/technologies/cookies?hl=en" [ref=e737] [cursor=pointer]:
+          - /url: https://policies.google.com/technologies/cookies?hl=en
+        - text: Safari
+        - link "https://www.apple.com/legal/privacy/en-ww/cookies/" [ref=e738] [cursor=pointer]:
+          - /url: https://www.apple.com/legal/privacy/en-ww/cookies/
+        - text: "To learn more about cookies, including which ones are on your computer, and how to manage or delete them, we can recommend you to visit:"
+        - link "https://www.allaboutcookies.org." [ref=e739] [cursor=pointer]:
+          - /url: https://www.allaboutcookies.org.
+        - text: Some functionality can use the Google Analytics service to track your activity. If you want to stop tracking by Google Analytics across all websites, please visit
+        - link "https://tools.google.com/dlpage/gaoptout" [ref=e740] [cursor=pointer]:
+          - /url: https://tools.google.com/dlpage/gaoptout
+        - text: The EaseMyTrip website may contain links to other websites that are not owned or controlled by EaseMyTrip. Please be aware that EaseMyTrip is not responsible for the privacy or security practices of such other sites. We encourage you to be aware when you leave our site and to read the privacy statements of each and every web site that collects personally identifiable information.
+        - text: FAITHFULLY YOURS,
+        - text: EaseMyTrip
+    - text: Close
+  - generic [ref=e741]:
+    - generic [ref=e742] [cursor=pointer]: ×
+    - link "most trusted brand":
+      - /url: /achievements/index.html
+      - img "most trusted brand"
+```
+
+# Test source
+
+```ts
+  1  | import { Page } from '@playwright/test';
+  2  | /**
+  3  |  * BasePage
+  4  |  * All Page Object classes extend this. Provides common helpers
+  5  |  * (navigate, waitForPageLoad) and holds the `page` reference.
+  6  |  */
+  7  | export class BasePage {
+  8  |   protected page: Page;//store browser page here [protected means child cls use it]
+  9  | 
+  10 |   constructor(page: Page) {
+  11 |     this.page = page;
+  12 |   }
+  13 | 
+  14 |   async navigate(path: string = ''): Promise<void> {
+> 15 |     await this.page.goto(path);
+     |                     ^ Error: page.goto: Test timeout of 30000ms exceeded.
+  16 |   }
+  17 | 
+  18 |   async waitForPageLoad(): Promise<void> {
+  19 |     await this.page.waitForLoadState('domcontentloaded');
+  20 |   }
+  21 | 
+  22 |   async getTitle(): Promise<string> {
+  23 |     return this.page.title();
+  24 |   }
+  25 | }
+  26 | //page -> browser tab
+  27 | //class -> blue print of object
+  28 | //protected ->accessible in child class but not outside
+  29 | //constructor -> initalize the object
+  30 | //async/await -> handleasynchronous operations like page navigate,elements interactions
+  31 | //promise<void> -> no return value
+  32 | //promise<string> -> returns text
+  33 | //this.page ->refers to page/browser instance passed to constructor,used for all interactions in page ojects.
+```

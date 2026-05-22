@@ -1,0 +1,1225 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: scenario3.spec.ts >> Scenario 3 - Hotel Room Selector >> Test Case 1 - Navigate, Open Room Selector and Verify Adult Label
+- Location: tests\scenario3.spec.ts:3:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://www.easemytrip.com/hotels/", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - link "easemytrip.com" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link "FLIGHT" [ref=e13] [cursor=pointer]:
+            - /url: /flights.html
+            - generic [ref=e15]: FLIGHT
+        - listitem [ref=e16]:
+          - link "HOTELS" [ref=e17] [cursor=pointer]:
+            - /url: /hotels/
+            - generic [ref=e19]: HOTELS
+        - listitem [ref=e20]:
+          - link "TRAINS" [ref=e21] [cursor=pointer]:
+            - /url: /railways/
+            - generic [ref=e23]: TRAINS
+        - listitem [ref=e24]:
+          - link "BUS" [ref=e25] [cursor=pointer]:
+            - /url: /bus/
+            - generic [ref=e27]: BUS
+        - listitem [ref=e28]:
+          - link "HOLIDAYS" [ref=e29] [cursor=pointer]:
+            - /url: /holidays/
+            - generic [ref=e31]: HOLIDAYS
+        - listitem [ref=e32]:
+          - link "CABS" [ref=e33] [cursor=pointer]:
+            - /url: /cabs/
+            - generic [ref=e35]: CABS
+        - listitem [ref=e36]:
+          - link "Activities" [ref=e37] [cursor=pointer]:
+            - /url: /activities/
+            - generic [ref=e39]: Activities
+        - listitem [ref=e40]:
+          - link "Visa" [ref=e41] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/visa-booking/
+            - generic [ref=e43]: Visa
+        - listitem [ref=e44] [cursor=pointer]:
+          - generic [ref=e47]: More
+          - generic:
+            - link "Monuments Majestic Monuments of India" [ref=e48]:
+              - /url: https://www.easemytrip.com/monuments/
+              - generic [ref=e50]:
+                - generic [ref=e51]: Monuments
+                - generic [ref=e52]: Majestic Monuments of India
+            - link "EaseMyTrip Cards Apply now to get Rewards" [ref=e53]:
+              - /url: https://www.emtcards.in/
+              - generic [ref=e55]:
+                - generic [ref=e56]: EaseMyTrip Cards
+                - generic [ref=e57]: Apply now to get Rewards
+            - link "EasyEloped For Romantic Getaways" [ref=e58]:
+              - /url: https://www.easyeloped.com/
+              - generic [ref=e60]:
+                - generic [ref=e61]: EasyEloped
+                - generic [ref=e62]: For Romantic Getaways
+            - link "EasyDarshan Spiritual Tours in India" [ref=e63]:
+              - /url: https://www.easydarshan.com/
+              - generic [ref=e65]:
+                - generic [ref=e66]: EasyDarshan
+                - generic [ref=e67]: Spiritual Tours in India
+            - link "Badrinath For Divine Blessings" [ref=e68]:
+              - /url: https://www.badrinath.com/
+              - generic [ref=e70]:
+                - generic [ref=e71]: Badrinath
+                - generic [ref=e72]: For Divine Blessings
+            - link "Airport Experience Enjoy airport service" [ref=e73]:
+              - /url: https://www.easemytrip.com/airport-experience.html
+              - generic [ref=e75]:
+                - generic [ref=e76]: Airport Experience
+                - generic [ref=e77]: Enjoy airport service
+            - link "Gift Card Buy giftcards here" [ref=e78]:
+              - /url: https://www.easemytrip.com/giftcard/
+              - generic [ref=e80]:
+                - generic [ref=e81]: Gift Card
+                - generic [ref=e82]: Buy giftcards here
+            - link "EaseMy Check Best latest offers" [ref=e83]:
+              - /url: https://www.easemytrip.com/deals.html
+              - generic [ref=e85]:
+                - generic [ref=e86]: EaseMy
+                - generic [ref=e87]: Check Best latest offers
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - generic [ref=e91] [cursor=pointer]:
+            - generic [ref=e93]: Customer Service
+            - generic:
+              - generic [ref=e97]:
+                - generic [ref=e98]: Call Support
+                - generic [ref=e99]: "Tel : 011 - 43131313, 43030303"
+              - link "Mail Support Care@easemytrip.com" [ref=e100]:
+                - /url: mailto:care@easemytrip.com
+                - generic [ref=e102]:
+                  - generic [ref=e103]: Mail Support
+                  - generic [ref=e104]: Care@easemytrip.com
+          - generic [ref=e106] [cursor=pointer]:
+            - img "Flag" [ref=e108]
+            - generic [ref=e109]: India
+          - img "Toggle contrast mode" [ref=e113] [cursor=pointer]
+        - generic [ref=e114] [cursor=pointer]:
+          - generic [ref=e115]: Login or Signup
+          - generic:
+            - generic [ref=e118]:
+              - generic [ref=e119]: Customer Login
+              - generic [ref=e120]: Login & check bookings
+            - link "Corporate Travel Login corporate account" [ref=e121]:
+              - /url: /corporate/
+              - generic [ref=e123]:
+                - generic [ref=e124]: Corporate Travel
+                - generic [ref=e125]: Login corporate account
+            - link "Agent Login Login your agent account" [ref=e126]:
+              - /url: /agents/
+              - generic [ref=e128]:
+                - generic [ref=e129]: Agent Login
+                - generic [ref=e130]: Login your agent account
+            - link "My Booking Manage your bookings here" [ref=e131]:
+              - /url: https://mybookings.easemytrip.com/
+              - generic [ref=e133]:
+                - generic [ref=e134]: My Booking
+                - generic [ref=e135]: Manage your bookings here
+    - navigation [ref=e136]:
+      - generic [ref=e138] [cursor=pointer]: ✖
+      - list [ref=e140]
+  - generic [ref=e142]:
+    - heading "Same hotel, Cheapest price. Guaranteed!" [level=1] [ref=e143]
+    - generic [ref=e145]:
+      - generic [ref=e147] [cursor=pointer]:
+        - text: Enter City Name, Location, or Specific hotel
+        - generic:
+          - list
+        - generic [ref=e149]:
+          - generic [ref=e150]: Bangalore
+          - generic [ref=e151]: India
+      - generic [ref=e152] [cursor=pointer]:
+        - text: Check-In
+        - generic [ref=e154]:
+          - paragraph [ref=e155]: 18May'2026
+          - paragraph [ref=e156]: Monday
+      - generic [ref=e157] [cursor=pointer]:
+        - text: Check-Out
+        - generic [ref=e159]:
+          - paragraph [ref=e160]: 19May'2026
+          - paragraph [ref=e161]: Tuesday
+      - generic [ref=e162] [cursor=pointer]:
+        - text: Rooms & Guests
+        - paragraph [ref=e164]:
+          - generic [ref=e165]: 1 Room 2 Guests
+      - button "Search" [ref=e168] [cursor=pointer]
+    - generic [ref=e170] [cursor=pointer]:
+      - img "Deal Icon" [ref=e171]
+      - text: Last Minute Deals
+      - checkbox "Deal Icon Last Minute Deals" [ref=e172]
+    - generic [ref=e175] [cursor=pointer]:
+      - img "Lowest Price Guarantee Icon" [ref=e176]
+      - text: Lowest Price Guarantee
+      - checkbox "Lowest Price Guarantee Icon Lowest Price Guarantee" [ref=e177]
+    - link "List Your Hotel For Free" [ref=e179] [cursor=pointer]:
+      - /url: https://www.easemytrip.com/hotels/appinventry/index
+  - link "Banner" [ref=e183] [cursor=pointer]:
+    - /url: https://www.easemytrip.com/tourism/morocco/morocco.html?utm_source=tourism&utm_campaign=morocco
+    - img "Banner" [ref=e184]
+  - generic [ref=e185]:
+    - heading "Exclusive Offers" [level=2] [ref=e188]
+    - generic [ref=e190]:
+      - generic [ref=e191]:
+        - group "1 / 25" [ref=e192]:
+          - 'link "Mount Hotels Get Up to 40% OFF* on Mount Hotels Book Mount Hotels And Enjoy Up to 40% OFF* on Your Stays Valid till : 31st Jul, 2026" [ref=e193] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/mount-hotels/
+            - generic [ref=e194]:
+              - img "Mount Hotels" [ref=e195]
+              - generic [ref=e197]:
+                - generic [ref=e198]: Get Up to 40% OFF* on
+                - generic [ref=e199]: Mount Hotels
+            - generic [ref=e200]:
+              - generic [ref=e201]: Book Mount Hotels And Enjoy Up to 40% OFF* on Your Stays
+              - generic [ref=e203]: "Valid till : 31st Jul, 2026"
+        - group "2 / 25" [ref=e204]:
+          - 'link "Spree Hotels Get Up to 45% OFF on Spree Hotels Grab Amazing Offer On Hotel Like Never Before Valid till : 31st May, 2026 SPREE Copy Code" [ref=e205] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/spree-hotel/
+            - generic [ref=e206]:
+              - img "Spree Hotels" [ref=e207]
+              - generic [ref=e209]:
+                - generic [ref=e210]: Get Up to 45% OFF on
+                - generic [ref=e211]: Spree Hotels
+            - generic [ref=e212]:
+              - generic [ref=e213]: Grab Amazing Offer On Hotel Like Never Before
+              - generic [ref=e214]:
+                - generic [ref=e215]: "Valid till : 31st May, 2026"
+                - generic [ref=e217]:
+                  - generic [ref=e218]: SPREE
+                  - img "Copy Code" [ref=e220]
+        - group "3 / 25" [ref=e221]:
+          - 'link "Hotel Sonar Bangla Get Up to 35% OFF on Hotel Sonar Bangla Grab Up to 35% OFF* & Experience Rich Hospitality of Bengal Valid till : 31st Jul, 2026" [ref=e222] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/hotel-sonar-bangla/
+            - generic [ref=e223]:
+              - img "Hotel Sonar Bangla" [ref=e224]
+              - generic [ref=e226]:
+                - generic [ref=e227]: Get Up to 35% OFF on
+                - generic [ref=e228]: Hotel Sonar Bangla
+            - generic [ref=e229]:
+              - generic [ref=e230]: Grab Up to 35% OFF* & Experience Rich Hospitality of Bengal
+              - generic [ref=e232]: "Valid till : 31st Jul, 2026"
+        - group "4 / 25" [ref=e233]:
+          - 'link "on Hotel Bookings Grab Up to 60% OFF* on Hotel Bookings Enjoy Up to 60% OFF* on Hotel Bookings with EaseMyTrip Valid till : 30th Apr 2026 EMTHOTELS Copy Code" [ref=e234] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/offers/emtstay.html
+            - generic [ref=e235]:
+              - img "on Hotel Bookings" [ref=e236]
+              - generic [ref=e238]:
+                - generic [ref=e239]: Grab Up to 60% OFF*
+                - generic [ref=e240]: on Hotel Bookings
+            - generic [ref=e241]:
+              - generic [ref=e242]: Enjoy Up to 60% OFF* on Hotel Bookings with EaseMyTrip
+              - generic [ref=e243]:
+                - generic [ref=e244]: "Valid till : 30th Apr 2026"
+                - generic [ref=e246]:
+                  - generic [ref=e247]: EMTHOTELS
+                  - img "Copy Code" [ref=e249]
+        - group "5 / 25" [ref=e250]:
+          - 'link "on First Hotel Bookings Incredible Discounts on First Hotel Bookings Register With Us Now & Enjoy Great Discounts on First Hotel Bookings Valid till : 30th Apr 2026 EMTFIRST Copy Code" [ref=e251] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/offers/hotel-new-user.html
+            - generic [ref=e252]:
+              - img "on First Hotel Bookings"
+              - generic [ref=e254]:
+                - generic [ref=e255]: Incredible Discounts
+                - generic [ref=e256]: on First Hotel Bookings
+            - generic [ref=e257]:
+              - generic [ref=e258]: Register With Us Now & Enjoy Great Discounts on First Hotel Bookings
+              - generic [ref=e259]:
+                - generic [ref=e260]: "Valid till : 30th Apr 2026"
+                - generic [ref=e262]:
+                  - generic [ref=e263]: EMTFIRST
+                  - img "Copy Code" [ref=e265]
+        - group "6 / 25" [ref=e266]:
+          - link "₹0 Payment Book Hotels With ₹0 Payment Book Your Favorite Hotels INR 0 with EaseMyTrip Book Now" [ref=e267] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/offers/book-now-pay-later.html
+            - generic [ref=e268]:
+              - img "₹0 Payment"
+              - generic [ref=e270]:
+                - generic [ref=e271]: Book Hotels With
+                - generic [ref=e272]: ₹0 Payment
+            - generic [ref=e273]:
+              - generic [ref=e274]: Book Your Favorite Hotels INR 0 with EaseMyTrip
+              - generic [ref=e276]: Book Now
+        - group "7 / 25" [ref=e277]:
+          - link "Lowest Price Guarantee Introducing Lowest Price Guarantee Lowest Price Guarantee on Hotel Bookings Book Now" [ref=e278] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/deals/lowest-price-guarantee/
+            - generic [ref=e279]:
+              - img "Lowest Price Guarantee"
+              - generic [ref=e281]:
+                - generic [ref=e282]: Introducing
+                - generic [ref=e283]: Lowest Price Guarantee
+            - generic [ref=e284]:
+              - generic [ref=e285]: Lowest Price Guarantee on Hotel Bookings
+              - generic [ref=e287]: Book Now
+        - group "8 / 25" [ref=e288]:
+          - 'link "Summit Hotels & Resorts Up to 35% OFF* on Summit Hotels & Resorts Enjoy Premium Stays With Up to 35% OFF* on Summit Hotels & Resorts Valid till : 30th June 2026" [ref=e289] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/summit-hotels/
+            - generic [ref=e290]:
+              - img "Summit Hotels & Resorts"
+              - generic [ref=e292]:
+                - generic [ref=e293]: Up to 35% OFF* on
+                - generic [ref=e294]: Summit Hotels & Resorts
+            - generic [ref=e295]:
+              - generic [ref=e296]: Enjoy Premium Stays With Up to 35% OFF* on Summit Hotels & Resorts
+              - generic [ref=e298]: "Valid till : 30th June 2026"
+        - group "9 / 25" [ref=e299]:
+          - 'link "Apple Group Hotels Up to 30% OFF* on Apple Group Hotels Check in to Pure Comfort with Up to 30% OFF* at 7 Apple Group Hotels Valid till : 31st May 2026" [ref=e300] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/7-Apple-Hotels-Resorts/
+            - generic [ref=e301]:
+              - img "Apple Group Hotels"
+              - generic [ref=e303]:
+                - generic [ref=e304]: Up to 30% OFF* on
+                - generic [ref=e305]: Apple Group Hotels
+            - generic [ref=e306]:
+              - generic [ref=e307]: Check in to Pure Comfort with Up to 30% OFF* at 7 Apple Group Hotels
+              - generic [ref=e309]: "Valid till : 31st May 2026"
+        - group "10 / 25" [ref=e310]:
+          - 'link "Sinclairs Hotels & Resorts Enjoy Up to 35% OFF* on Sinclairs Hotels & Resorts Book Sinclairs Hotels & Resorts And Enjoy Up to 35% OFF* on Your Stays Valid till: 30th Jun 2026" [ref=e311] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/sinclairs-hotels-resorts/
+            - generic [ref=e312]:
+              - img "Sinclairs Hotels & Resorts"
+              - generic [ref=e314]:
+                - generic [ref=e315]: Enjoy Up to 35% OFF* on
+                - generic [ref=e316]: Sinclairs Hotels & Resorts
+            - generic [ref=e317]:
+              - generic [ref=e318]: Book Sinclairs Hotels & Resorts And Enjoy Up to 35% OFF* on Your Stays
+              - generic [ref=e320]: "Valid till: 30th Jun 2026"
+        - group "11 / 25" [ref=e321]:
+          - 'link "The Clarks Hotels & Resorts Enjoy Up to 25% OFF* on The Clarks Hotels & Resorts Book The Clarks Hotels & Resorts & Enjoy Up to 25% OFF* Valid till : 31st May 2026" [ref=e322] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/clarks-hotels/
+            - generic [ref=e323]:
+              - img "The Clarks Hotels & Resorts"
+              - generic [ref=e325]:
+                - generic [ref=e326]: Enjoy Up to 25% OFF* on
+                - generic [ref=e327]: The Clarks Hotels & Resorts
+            - generic [ref=e328]:
+              - generic [ref=e329]: Book The Clarks Hotels & Resorts & Enjoy Up to 25% OFF*
+              - generic [ref=e331]: "Valid till : 31st May 2026"
+        - group "12 / 25" [ref=e332]:
+          - 'link "Voyage Hotels & Resorts Save Up to 40%* on Voyage Hotels & Resorts Unlock Up to 40% OFF* on Booking Voyage Hotels & Resorts Valid till : 30th Jun 2026" [ref=e333] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/voyage-hotels/
+            - generic [ref=e334]:
+              - img "Voyage Hotels & Resorts"
+              - generic [ref=e336]:
+                - generic [ref=e337]: Save Up to 40%* on
+                - generic [ref=e338]: Voyage Hotels & Resorts
+            - generic [ref=e339]:
+              - generic [ref=e340]: Unlock Up to 40% OFF* on Booking Voyage Hotels & Resorts
+              - generic [ref=e342]: "Valid till : 30th Jun 2026"
+        - group "13 / 25" [ref=e343]:
+          - 'link "Sumi Yashshree Hotels & Resorts Up to 35% OFF* on Sumi Yashshree Hotels & Resorts Book Sumi Yashshree Hotels & Resorts And Enjoy Up to 35% OFF* on Your Stays Valid till : 31st Jul, 2026" [ref=e344] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/sumi-yashshree-hotels/
+            - generic [ref=e345]:
+              - img "Sumi Yashshree Hotels & Resorts"
+              - generic [ref=e347]:
+                - generic [ref=e348]: Up to 35% OFF* on
+                - generic [ref=e349]: Sumi Yashshree Hotels & Resorts
+            - generic [ref=e350]:
+              - generic [ref=e351]: Book Sumi Yashshree Hotels & Resorts And Enjoy Up to 35% OFF* on Your Stays
+              - generic [ref=e353]: "Valid till : 31st Jul, 2026"
+        - group "14 / 25" [ref=e354]:
+          - 'link "Zone Hotels Get Up to 35% OFF* on Zone Hotels Grab Incredible Deals on Zone By The Park Hotels Valid till : 31st May, 2026" [ref=e355] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/zone-hotel/
+            - generic [ref=e356]:
+              - img "Zone Hotels"
+              - generic [ref=e358]:
+                - generic [ref=e359]: Get Up to 35% OFF* on
+                - generic [ref=e360]: Zone Hotels
+            - generic [ref=e361]:
+              - generic [ref=e362]: Grab Incredible Deals on Zone By The Park Hotels
+              - generic [ref=e364]: "Valid till : 31st May, 2026"
+        - group "15 / 25" [ref=e365]:
+          - 'link "Amritara Hotels Get Up to 40% OFF* on Amritara Hotels Unlock Up to 40% OFF* on Booking Amritara Hotels & Resorts with EaseMyTrip Valid till : 31st May, 2026" [ref=e366] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/amritara-hotels/
+            - generic [ref=e367]:
+              - img "Amritara Hotels"
+              - generic [ref=e369]:
+                - generic [ref=e370]: Get Up to 40% OFF* on
+                - generic [ref=e371]: Amritara Hotels
+            - generic [ref=e372]:
+              - generic [ref=e373]: Unlock Up to 40% OFF* on Booking Amritara Hotels & Resorts with EaseMyTrip
+              - generic [ref=e375]: "Valid till : 31st May, 2026"
+        - group "16 / 25" [ref=e376]:
+          - 'link "The Byke Hotels Get Up to 30% OFF* on The Byke Hotels Enjoy Massive Discount of Up to 30%* on The Byke Hotels & Resorts Valid till : 31st May, 2026" [ref=e377] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/the-byke-hotels/
+            - generic [ref=e378]:
+              - img "The Byke Hotels"
+              - generic [ref=e380]:
+                - generic [ref=e381]: Get Up to 30% OFF* on
+                - generic [ref=e382]: The Byke Hotels
+            - generic [ref=e383]:
+              - generic [ref=e384]: Enjoy Massive Discount of Up to 30%* on The Byke Hotels & Resorts
+              - generic [ref=e386]: "Valid till : 31st May, 2026"
+        - group "17 / 25" [ref=e387]:
+          - 'link "Treehouse Hotels Get Up to 40% OFF* on Treehouse Hotels Enjoy Special discount of Up to 40%* on Treehouse Hotels Valid till : 31st May, 2026" [ref=e388] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/tree-house-group/
+            - generic [ref=e389]:
+              - img "Treehouse Hotels"
+              - generic [ref=e391]:
+                - generic [ref=e392]: Get Up to 40% OFF* on
+                - generic [ref=e393]: Treehouse Hotels
+            - generic [ref=e394]:
+              - generic [ref=e395]: Enjoy Special discount of Up to 40%* on Treehouse Hotels
+              - generic [ref=e397]: "Valid till : 31st May, 2026"
+        - group "18 / 25" [ref=e398]:
+          - 'link "Mount Hotels Get Up to 40% OFF* on Mount Hotels Book Mount Hotels And Enjoy Up to 40% OFF* on Your Stays Valid till : 31st Jul, 2026" [ref=e399] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/mount-hotels/
+            - generic [ref=e400]:
+              - img "Mount Hotels" [ref=e401]
+              - generic [ref=e403]:
+                - generic [ref=e404]: Get Up to 40% OFF* on
+                - generic [ref=e405]: Mount Hotels
+            - generic [ref=e406]:
+              - generic [ref=e407]: Book Mount Hotels And Enjoy Up to 40% OFF* on Your Stays
+              - generic [ref=e409]: "Valid till : 31st Jul, 2026"
+        - group "19 / 25" [ref=e410]:
+          - 'link "Spree Hotels Get Up to 45% OFF on Spree Hotels Grab Amazing Offer On Hotel Like Never Before Valid till : 31st May, 2026 SPREE Copy Code" [ref=e411] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/spree-hotel/
+            - generic [ref=e412]:
+              - img "Spree Hotels" [ref=e413]
+              - generic [ref=e415]:
+                - generic [ref=e416]: Get Up to 45% OFF on
+                - generic [ref=e417]: Spree Hotels
+            - generic [ref=e418]:
+              - generic [ref=e419]: Grab Amazing Offer On Hotel Like Never Before
+              - generic [ref=e420]:
+                - generic [ref=e421]: "Valid till : 31st May, 2026"
+                - generic [ref=e423]:
+                  - generic [ref=e424]: SPREE
+                  - img "Copy Code" [ref=e426]
+        - group "20 / 25" [ref=e427]:
+          - 'link "Hotel Sonar Bangla Get Up to 35% OFF on Hotel Sonar Bangla Grab Up to 35% OFF* & Experience Rich Hospitality of Bengal Valid till : 31st Jul, 2026" [ref=e428] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/hotel-sonar-bangla/
+            - generic [ref=e429]:
+              - img "Hotel Sonar Bangla" [ref=e430]
+              - generic [ref=e432]:
+                - generic [ref=e433]: Get Up to 35% OFF on
+                - generic [ref=e434]: Hotel Sonar Bangla
+            - generic [ref=e435]:
+              - generic [ref=e436]: Grab Up to 35% OFF* & Experience Rich Hospitality of Bengal
+              - generic [ref=e438]: "Valid till : 31st Jul, 2026"
+        - group "21 / 25" [ref=e439]:
+          - 'link "on Hotel Bookings Grab Up to 60% OFF* on Hotel Bookings Enjoy Up to 60% OFF* on Hotel Bookings with EaseMyTrip Valid till : 30th Apr 2026 EMTHOTELS Copy Code" [ref=e440] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/offers/emtstay.html
+            - generic [ref=e441]:
+              - img "on Hotel Bookings" [ref=e442]
+              - generic [ref=e444]:
+                - generic [ref=e445]: Grab Up to 60% OFF*
+                - generic [ref=e446]: on Hotel Bookings
+            - generic [ref=e447]:
+              - generic [ref=e448]: Enjoy Up to 60% OFF* on Hotel Bookings with EaseMyTrip
+              - generic [ref=e449]:
+                - generic [ref=e450]: "Valid till : 30th Apr 2026"
+                - generic [ref=e452]:
+                  - generic [ref=e453]: EMTHOTELS
+                  - img "Copy Code" [ref=e455]
+        - group "22 / 25" [ref=e456]:
+          - 'link "on First Hotel Bookings Incredible Discounts on First Hotel Bookings Register With Us Now & Enjoy Great Discounts on First Hotel Bookings Valid till : 30th Apr 2026 EMTFIRST Copy Code" [ref=e457] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/offers/hotel-new-user.html
+            - generic [ref=e458]:
+              - img "on First Hotel Bookings"
+              - generic [ref=e460]:
+                - generic [ref=e461]: Incredible Discounts
+                - generic [ref=e462]: on First Hotel Bookings
+            - generic [ref=e463]:
+              - generic [ref=e464]: Register With Us Now & Enjoy Great Discounts on First Hotel Bookings
+              - generic [ref=e465]:
+                - generic [ref=e466]: "Valid till : 30th Apr 2026"
+                - generic [ref=e468]:
+                  - generic [ref=e469]: EMTFIRST
+                  - img "Copy Code" [ref=e471]
+        - group "23 / 25" [ref=e472]:
+          - link "₹0 Payment Book Hotels With ₹0 Payment Book Your Favorite Hotels INR 0 with EaseMyTrip Book Now" [ref=e473] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/offers/book-now-pay-later.html
+            - generic [ref=e474]:
+              - img "₹0 Payment"
+              - generic [ref=e476]:
+                - generic [ref=e477]: Book Hotels With
+                - generic [ref=e478]: ₹0 Payment
+            - generic [ref=e479]:
+              - generic [ref=e480]: Book Your Favorite Hotels INR 0 with EaseMyTrip
+              - generic [ref=e482]: Book Now
+        - group "24 / 25" [ref=e483]:
+          - link "Lowest Price Guarantee Introducing Lowest Price Guarantee Lowest Price Guarantee on Hotel Bookings Book Now" [ref=e484] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/deals/lowest-price-guarantee/
+            - generic [ref=e485]:
+              - img "Lowest Price Guarantee"
+              - generic [ref=e487]:
+                - generic [ref=e488]: Introducing
+                - generic [ref=e489]: Lowest Price Guarantee
+            - generic [ref=e490]:
+              - generic [ref=e491]: Lowest Price Guarantee on Hotel Bookings
+              - generic [ref=e493]: Book Now
+        - group "25 / 25" [ref=e494]:
+          - 'link "Summit Hotels & Resorts Up to 35% OFF* on Summit Hotels & Resorts Enjoy Premium Stays With Up to 35% OFF* on Summit Hotels & Resorts Valid till : 30th June 2026" [ref=e495] [cursor=pointer]':
+            - /url: https://www.easemytrip.com/hotels/chains/summit-hotels/
+            - generic [ref=e496]:
+              - img "Summit Hotels & Resorts"
+              - generic [ref=e498]:
+                - generic [ref=e499]: Up to 35% OFF* on
+                - generic [ref=e500]: Summit Hotels & Resorts
+            - generic [ref=e501]:
+              - generic [ref=e502]: Enjoy Premium Stays With Up to 35% OFF* on Summit Hotels & Resorts
+              - generic [ref=e504]: "Valid till : 30th June 2026"
+      - button "Next slide" [ref=e505] [cursor=pointer]
+      - button "Previous slide" [ref=e506] [cursor=pointer]
+  - generic [ref=e508]:
+    - heading "Hotels of Choice" [level=2] [ref=e509]
+    - generic [ref=e510]:
+      - generic [ref=e511]:
+        - generic:
+          - link "DLS Hotels hotel DLS Hotels Explore More explore-arrow" [ref=e514] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/dls-hotels-deal/
+            - img "DLS Hotels" [ref=e515]
+            - img "hotel" [ref=e516]
+            - generic [ref=e517]:
+              - generic [ref=e518]: DLS Hotels
+              - generic [ref=e519]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e520]
+          - link "Voyage Hotels hotel Voyage Hotels Explore More explore-arrow" [ref=e523] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/voyage-hotels/
+            - img "Voyage Hotels" [ref=e524]
+            - img "hotel" [ref=e525]
+            - generic [ref=e526]:
+              - generic [ref=e527]: Voyage Hotels
+              - generic [ref=e528]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e529]
+          - link "lords-hotels-resorts hotel Lords Hotels Resorts Explore More explore-arrow" [ref=e532] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/lords-hotel/
+            - img "lords-hotels-resorts" [ref=e533]
+            - img "hotel" [ref=e534]
+            - generic [ref=e535]:
+              - generic [ref=e536]: Lords Hotels Resorts
+              - generic [ref=e537]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e538]
+          - link "Spree Hotels hotel Spree Hotels Explore More explore-arrow" [ref=e541] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/spree-hotel/
+            - img "Spree Hotels" [ref=e542]
+            - img "hotel" [ref=e543]
+            - generic [ref=e544]:
+              - generic [ref=e545]: Spree Hotels
+              - generic [ref=e546]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e547]
+          - link "Hotel Sonar Bangla hotel Hotel Sonar Bangla Explore More explore-arrow" [ref=e550] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/hotel-sonar-bangla/
+            - img "Hotel Sonar Bangla" [ref=e551]
+            - img "hotel" [ref=e552]
+            - generic [ref=e553]:
+              - generic [ref=e554]: Hotel Sonar Bangla
+              - generic [ref=e555]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e556]
+          - link "Amritara Hotels hotel Amritara Hotels Explore More explore-arrow" [ref=e559] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/amritara-hotels/
+            - img "Amritara Hotels" [ref=e560]
+            - img "hotel" [ref=e561]
+            - generic [ref=e562]:
+              - generic [ref=e563]: Amritara Hotels
+              - generic [ref=e564]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e565]
+          - link "Mount Hotels hotel Mount Hotels Explore More explore-arrow" [ref=e568] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/mount-hotels/
+            - img "Mount Hotels" [ref=e569]
+            - img "hotel" [ref=e570]
+            - generic [ref=e571]:
+              - generic [ref=e572]: Mount Hotels
+              - generic [ref=e573]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e574]
+          - link "Summit Hotels & Resorts hotel Summit Hotels & Resorts Explore More explore-arrow" [ref=e577] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/summit-hotels/
+            - img "Summit Hotels & Resorts" [ref=e578]
+            - img "hotel" [ref=e579]
+            - generic [ref=e580]:
+              - generic [ref=e581]: Summit Hotels & Resorts
+              - generic [ref=e582]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e583]
+          - link "Sinclairs Hotels & Resorts hotel Sinclairs Hotels & Resorts Explore More explore-arrow" [ref=e586] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/sinclairs-hotels-resorts/
+            - img "Sinclairs Hotels & Resorts" [ref=e587]
+            - img "hotel" [ref=e588]
+            - generic [ref=e589]:
+              - generic [ref=e590]: Sinclairs Hotels & Resorts
+              - generic [ref=e591]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e592]
+          - link "DLS Hotels hotel Sumi Yashshree Hotels & Resorts Explore More explore-arrow" [ref=e595] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/sumi-yashshree-hotels/
+            - img "DLS Hotels" [ref=e596]
+            - img "hotel" [ref=e597]
+            - generic [ref=e598]:
+              - generic [ref=e599]: Sumi Yashshree Hotels & Resorts
+              - generic [ref=e600]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e601]
+          - link "DLS Hotels hotel DLS Hotels Explore More explore-arrow" [ref=e604] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/dls-hotels-deal/
+            - img "DLS Hotels" [ref=e605]
+            - img "hotel" [ref=e606]
+            - generic [ref=e607]:
+              - generic [ref=e608]: DLS Hotels
+              - generic [ref=e609]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e610]
+          - link "Voyage Hotels hotel Voyage Hotels Explore More explore-arrow" [ref=e613] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/voyage-hotels/
+            - img "Voyage Hotels" [ref=e614]
+            - img "hotel" [ref=e615]
+            - generic [ref=e616]:
+              - generic [ref=e617]: Voyage Hotels
+              - generic [ref=e618]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e619]
+          - link "lords-hotels-resorts hotel Lords Hotels Resorts Explore More explore-arrow" [ref=e622] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/lords-hotel/
+            - img "lords-hotels-resorts" [ref=e623]
+            - img "hotel" [ref=e624]
+            - generic [ref=e625]:
+              - generic [ref=e626]: Lords Hotels Resorts
+              - generic [ref=e627]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e628]
+          - link "Spree Hotels hotel Spree Hotels Explore More explore-arrow" [ref=e631] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/spree-hotel/
+            - img "Spree Hotels" [ref=e632]
+            - img "hotel" [ref=e633]
+            - generic [ref=e634]:
+              - generic [ref=e635]: Spree Hotels
+              - generic [ref=e636]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e637]
+          - link "Hotel Sonar Bangla hotel Hotel Sonar Bangla Explore More explore-arrow" [ref=e640] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/hotel-sonar-bangla/
+            - img "Hotel Sonar Bangla" [ref=e641]
+            - img "hotel" [ref=e642]
+            - generic [ref=e643]:
+              - generic [ref=e644]: Hotel Sonar Bangla
+              - generic [ref=e645]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e646]
+          - link "Amritara Hotels hotel Amritara Hotels Explore More explore-arrow" [ref=e649] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/amritara-hotels/
+            - img "Amritara Hotels" [ref=e650]
+            - img "hotel" [ref=e651]
+            - generic [ref=e652]:
+              - generic [ref=e653]: Amritara Hotels
+              - generic [ref=e654]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e655]
+          - link "Mount Hotels hotel Mount Hotels Explore More explore-arrow" [ref=e658] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/mount-hotels/
+            - img "Mount Hotels" [ref=e659]
+            - img "hotel" [ref=e660]
+            - generic [ref=e661]:
+              - generic [ref=e662]: Mount Hotels
+              - generic [ref=e663]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e664]
+          - link "Summit Hotels & Resorts hotel Summit Hotels & Resorts Explore More explore-arrow" [ref=e667] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/summit-hotels/
+            - img "Summit Hotels & Resorts" [ref=e668]
+            - img "hotel" [ref=e669]
+            - generic [ref=e670]:
+              - generic [ref=e671]: Summit Hotels & Resorts
+              - generic [ref=e672]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e673]
+          - link "Sinclairs Hotels & Resorts hotel Sinclairs Hotels & Resorts Explore More explore-arrow" [ref=e676] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/sinclairs-hotels-resorts/
+            - img "Sinclairs Hotels & Resorts" [ref=e677]
+            - img "hotel" [ref=e678]
+            - generic [ref=e679]:
+              - generic [ref=e680]: Sinclairs Hotels & Resorts
+              - generic [ref=e681]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e682]
+          - link "DLS Hotels hotel Sumi Yashshree Hotels & Resorts Explore More explore-arrow" [ref=e685] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/hotels/chains/sumi-yashshree-hotels/
+            - img "DLS Hotels" [ref=e686]
+            - img "hotel" [ref=e687]
+            - generic [ref=e688]:
+              - generic [ref=e689]: Sumi Yashshree Hotels & Resorts
+              - generic [ref=e690]:
+                - text: Explore More
+                - img "explore-arrow" [ref=e691]
+      - generic [ref=e692]:
+        - button "next_arrow":
+          - img "next_arrow"
+        - button "prev_arrow":
+          - img "prev_arrow"
+  - generic [ref=e694]:
+    - generic [ref=e695]:
+      - heading "Book Hotels For Every Mood" [level=2] [ref=e696]
+      - paragraph [ref=e697]: Curated Escapes for Your Curious Soul!
+    - generic [ref=e699]:
+      - link "Weekend Getaways Explore More Explore" [ref=e701] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/trending-hotels/weekend-getaways/
+        - generic [ref=e703]:
+          - heading "Weekend Getaways" [level=3] [ref=e704]
+          - generic [ref=e705]:
+            - text: Explore More
+            - img "Explore" [ref=e706]
+      - link "Wildlife Adventure Explore More Explore" [ref=e708] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/trending-hotels/wildlife/
+        - generic [ref=e710]:
+          - heading "Wildlife Adventure" [level=3] [ref=e711]
+          - generic [ref=e712]:
+            - text: Explore More
+            - img "Explore" [ref=e713]
+      - link "Mountains Calling Explore More Explore" [ref=e715] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/trending-hotels/mountains/
+        - generic [ref=e717]:
+          - heading "Mountains Calling" [level=3] [ref=e718]
+          - generic [ref=e719]:
+            - text: Explore More
+            - img "Explore" [ref=e720]
+      - link "Beach Vacations Explore More Explore" [ref=e722] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/trending-hotels/beach/
+        - generic [ref=e724]:
+          - heading "Beach Vacations" [level=3] [ref=e725]
+          - generic [ref=e726]:
+            - text: Explore More
+            - img "Explore" [ref=e727]
+  - generic [ref=e731]:
+    - heading "Book Hotels at Popular Destinations" [level=2] [ref=e733]
+    - generic [ref=e734]:
+      - generic [ref=e735]:
+        - link "Delhi" [ref=e737] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-delhi/
+          - img "Delhi" [ref=e738]
+        - generic [ref=e739]:
+          - heading "Delhi" [level=5] [ref=e740]:
+            - link "Delhi" [ref=e741] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-delhi/
+          - generic [ref=e742]:
+            - link "Hotels," [ref=e743] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-delhi/
+            - link "Budget Hotels," [ref=e744] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-delhi/
+            - link "3 Star Hotels," [ref=e745] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-delhi/
+            - link "4 Star Hotels," [ref=e746] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-delhi/
+            - link "5 Star Hotels" [ref=e747] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-delhi/
+      - generic [ref=e748]:
+        - link "Goa" [ref=e750] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-goa/
+          - img "Goa" [ref=e751]
+        - generic [ref=e752]:
+          - heading "Goa" [level=5] [ref=e753]:
+            - link "Goa" [ref=e754] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-goa/
+          - generic [ref=e755]:
+            - link "Hotels," [ref=e756] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-goa/
+            - link "Budget Hotels," [ref=e757] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-goa/
+            - link "3 Star Hotels," [ref=e758] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-goa/
+            - link "4 Star Hotels," [ref=e759] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-goa/
+            - link "5 Star Hotels" [ref=e760] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-goa/
+      - generic [ref=e761]:
+        - link "Mumbai" [ref=e763] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-mumbai/
+          - img "Mumbai" [ref=e764]
+        - generic [ref=e765]:
+          - heading "Mumbai" [level=5] [ref=e766]:
+            - link "Mumbai" [ref=e767] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-mumbai/
+          - generic [ref=e768]:
+            - link "Hotels," [ref=e769] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-mumbai/
+            - link "Budget Hotels," [ref=e770] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-mumbai/
+            - link "3 Star Hotels," [ref=e771] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-mumbai/
+            - link "4 Star Hotels," [ref=e772] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-mumbai/
+            - link "5 Star Hotels" [ref=e773] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-mumbai/
+      - generic [ref=e774]:
+        - link "Shimla" [ref=e776] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-shimla/
+          - img "Shimla" [ref=e777]
+        - generic [ref=e778]:
+          - heading "Shimla" [level=5] [ref=e779]:
+            - link "Shimla" [ref=e780] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-shimla/
+          - generic [ref=e781]:
+            - link "Hotels," [ref=e782] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-shimla/
+            - link "Budget Hotels," [ref=e783] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-shimla/
+            - link "3 Star Hotels," [ref=e784] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-shimla/
+            - link "4 Star Hotels," [ref=e785] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-shimla/
+            - link "5 Star Hotels" [ref=e786] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-shimla/
+      - generic [ref=e787]:
+        - link "manali" [ref=e789] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-manali/
+          - img "manali" [ref=e790]
+        - generic [ref=e791]:
+          - heading "Manali" [level=5] [ref=e792]:
+            - link "Manali" [ref=e793] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-manali/
+          - generic [ref=e794]:
+            - link "Hotels," [ref=e795] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-manali/
+            - link "Budget Hotels," [ref=e796] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-manali/
+            - link "3 Star Hotels," [ref=e797] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-manali/
+            - link "4 Star Hotels," [ref=e798] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-manali/
+            - link "5 Star Hotels" [ref=e799] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-manali/
+      - generic [ref=e800]:
+        - link "Hyderabad" [ref=e802] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-hyderabad/
+          - img "Hyderabad" [ref=e803]
+        - generic [ref=e804]:
+          - heading "Hyderabad" [level=5] [ref=e805]:
+            - link "Hyderabad" [ref=e806] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-hyderabad/
+          - generic [ref=e807]:
+            - link "Hotels," [ref=e808] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-hyderabad/
+            - link "Budget Hotels," [ref=e809] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-hyderabad/
+            - link "3 Star Hotels," [ref=e810] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-hyderabad/
+            - link "4 Star Hotels," [ref=e811] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-hyderabad/
+            - link "5 Star Hotels" [ref=e812] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-hyderabad/
+      - generic [ref=e813]:
+        - link "Chennai" [ref=e815] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-chennai/
+          - img "Chennai" [ref=e816]
+        - generic [ref=e817]:
+          - heading "Chennai" [level=5] [ref=e818]:
+            - link "Chennai" [ref=e819] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-chennai/
+          - generic [ref=e820]:
+            - link "Hotels," [ref=e821] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-chennai/
+            - link "Budget Hotels," [ref=e822] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-chennai/
+            - link "3 Star Hotels," [ref=e823] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-chennai/
+            - link "4 Star Hotels," [ref=e824] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-chennai/
+            - link "5 Star Hotels" [ref=e825] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-chennai/
+      - generic [ref=e826]:
+        - link "Kolkata" [ref=e828] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-kolkata/
+          - img "Kolkata" [ref=e829]
+        - generic [ref=e830]:
+          - heading "Kolkata" [level=5] [ref=e831]:
+            - link "Kolkata" [ref=e832] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-kolkata/
+          - generic [ref=e833]:
+            - link "Hotels," [ref=e834] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-kolkata/
+            - link "Budget Hotels," [ref=e835] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-kolkata/
+            - link "3 Star Hotels," [ref=e836] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-kolkata/
+            - link "4 Star Hotels," [ref=e837] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-kolkata/
+            - link "5 Star Hotels" [ref=e838] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-kolkata/
+      - generic [ref=e839]:
+        - link "Jaipur" [ref=e841] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-jaipur/
+          - img "Jaipur" [ref=e842]
+        - generic [ref=e843]:
+          - heading "Jaipur" [level=5] [ref=e844]:
+            - link "Jaipur" [ref=e845] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-jaipur/
+          - generic [ref=e846]:
+            - link "Hotels," [ref=e847] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-jaipur/
+            - link "Budget Hotels," [ref=e848] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-jaipur/
+            - link "3 Star Hotels," [ref=e849] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-jaipur/
+            - link "4 Star Hotels," [ref=e850] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-jaipur/
+            - link "5 Star Hotels" [ref=e851] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-jaipur/
+      - generic [ref=e852]:
+        - link "Pune" [ref=e854] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-pune/
+          - img "Pune" [ref=e855]
+        - generic [ref=e856]:
+          - heading "Pune" [level=5] [ref=e857]:
+            - link "Pune" [ref=e858] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-pune/
+          - generic [ref=e859]:
+            - link "Hotels," [ref=e860] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-pune/
+            - link "Budget Hotels," [ref=e861] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-pune/
+            - link "3 Star Hotels," [ref=e862] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-pune/
+            - link "4 Star Hotels," [ref=e863] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-pune/
+            - link "5 Star Hotels" [ref=e864] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-pune/
+      - generic [ref=e865]:
+        - link "Gurugram" [ref=e867] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-gurugram/
+          - img "Gurugram" [ref=e868]
+        - generic [ref=e869]:
+          - heading "Gurugram" [level=5] [ref=e870]:
+            - link "Gurugram" [ref=e871] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-gurugram/
+          - generic [ref=e872]:
+            - link "Hotels," [ref=e873] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-gurugram/
+            - link "Budget Hotels," [ref=e874] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-gurugram/
+            - link "3 Star Hotels," [ref=e875] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-gurugram/
+            - link "4 Star Hotels," [ref=e876] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-gurugram/
+            - link "5 Star Hotels" [ref=e877] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-gurugram/
+      - generic [ref=e878]:
+        - link "Ahmedabad" [ref=e880] [cursor=pointer]:
+          - /url: https://www.easemytrip.com/hotels/hotels-in-ahmedabad/
+          - img "Ahmedabad" [ref=e881]
+        - generic [ref=e882]:
+          - heading "Ahemdabad" [level=5] [ref=e883]:
+            - link "Ahemdabad" [ref=e884] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-ahmedabad/
+          - generic [ref=e885]:
+            - link "Hotels," [ref=e886] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/hotels-in-ahmedabad/
+            - link "Budget Hotels," [ref=e887] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/budget-hotels-in-ahmedabad/
+            - link "3 Star Hotels," [ref=e888] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/3-star-hotels-in-ahmedabad/
+            - link "4 Star Hotels," [ref=e889] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/4-star-hotels-in-ahmedabad/
+            - link "5 Star Hotels" [ref=e890] [cursor=pointer]:
+              - /url: https://www.easemytrip.com/hotels/5-star-hotels-in-ahmedabad/
+    - button "View More" [ref=e892] [cursor=pointer]
+  - generic [ref=e894]:
+    - heading "Our Top Hotel Chains" [level=2] [ref=e895]
+    - paragraph [ref=e896]: EaseMyTrip has a wide range of luxury and budget-friendly hotel chain properties. We have picked the finest hotels in India with world-class amenities. We bring you not only a stay option, but an experience in your budget to enjoy the luxury. We make sure that all the hotels are safe, hygienic, comfortable, and easily approachable when it comes to location. Book your hotel with EaseMyTrip and don't forget to grab an amazing hotel deal to save huge on your stay.
+    - generic [ref=e897]:
+      - link "Amritara Hotel Logo" [ref=e899] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/amritara-hotels/
+        - img "Amritara Hotel Logo"
+      - link "Byke Hotel Logo" [ref=e901] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/the-byke-hotels/
+        - img "Byke Hotel Logo"
+      - link "treehouse Hotel Logo" [ref=e903] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/tree-house-group/
+        - img "treehouse Hotel Logo"
+      - link "treat-hotel Logo" [ref=e905] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/treat-group-of-hotels/
+        - img "treat-hotel Logo"
+      - link "Spree Hotel Logo" [ref=e907] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/spree-hotel/
+        - img "Spree Hotel Logo"
+      - link "Justa Hotels Logo" [ref=e909] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/justa-hotels/
+        - img "Justa Hotels Logo"
+      - link "Apple-Hotels-Resorts Logo" [ref=e911] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/7-Apple-Hotels-Resorts/
+        - img "Apple-Hotels-Resorts Logo"
+      - link "sumi-yashshree Logo" [ref=e913] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/sumi-yashshree-hotels/
+        - img "sumi-yashshree Logo" [ref=e914]
+      - link "Sinclairs Hotels Logo" [ref=e916] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/sinclairs-hotels-resorts/
+        - img "Sinclairs Hotels Logo" [ref=e917]
+      - link "Sumit Hotels Logo" [ref=e919] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/summit-hotels/
+        - img "Sumit Hotels Logo" [ref=e920]
+      - link "Hotel Logo" [ref=e922] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/mount-hotels/
+        - img "Hotel Logo" [ref=e923]
+      - link "zone the park Hotel Logo" [ref=e925] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/zone-hotel/
+        - img "zone the park Hotel Logo"
+      - link "Hotel Sonar Bangla Logo" [ref=e927] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/hotel-sonar-bangla/
+        - img "Hotel Sonar Bangla Logo"
+      - link "Hotel avianna-group Logo" [ref=e929] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/avianna-group/
+        - img "Hotel avianna-group Logo"
+      - link "Hotel voyage-hotels Logo" [ref=e931] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/voyage-hotels/
+        - img "Hotel voyage-hotels Logo" [ref=e932]
+      - link "dls Hotel Logo" [ref=e934] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/dls-hotels-deal/
+        - img "dls Hotel Logo" [ref=e935]
+      - link "lords Hotel Logo" [ref=e937] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/lords-hotel/
+        - img "lords Hotel Logo" [ref=e938]
+      - link "lords Hotel Logo" [ref=e940] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/elivaas-hotel/
+        - img "lords Hotel Logo"
+      - link "The Clarks Hotels & Resorts" [ref=e942] [cursor=pointer]:
+        - /url: https://www.easemytrip.com/hotels/chains/clarks-hotels/
+        - img "The Clarks Hotels & Resorts"
+  - generic [ref=e944]:
+    - generic [ref=e945]:
+      - img "app-img"
+    - generic [ref=e947]:
+      - generic [ref=e948]: Highest-rated mobile app
+      - generic [ref=e950]:
+        - generic [ref=e951]:
+          - generic [ref=e952]: "4.6"
+          - generic [ref=e953]:
+            - img [ref=e954]
+            - img [ref=e955]
+            - img [ref=e956]
+            - img [ref=e957]
+            - img [ref=e958]
+          - generic [ref=e959]:
+            - img [ref=e960]
+            - generic [ref=e961]: 4,83,459
+        - generic [ref=e962]:
+          - generic [ref=e964]: "5"
+          - generic [ref=e967]: "4"
+          - generic [ref=e970]: "3"
+          - generic [ref=e973]: "2"
+          - generic [ref=e976]: "1"
+    - generic [ref=e979]:
+      - paragraph [ref=e980]: Trusted By
+      - paragraph [ref=e981]: 30 Million+ Customers
+    - generic [ref=e982]:
+      - generic [ref=e983]:
+        - generic [ref=e984]: Download EaseMyTrip App
+        - generic [ref=e985]: "Save Up to Rs.5000 OFF on your first hotel booking: EMTGREET"
+        - paragraph [ref=e986]: For Hassle-Free Hotel Booking
+      - generic [ref=e988]:
+        - generic [ref=e989]:
+          - link "google-play-icon" [ref=e990] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.easemytrip.android
+            - img "google-play-icon"
+          - link "app-store-icon" [ref=e991] [cursor=pointer]:
+            - /url: https://apps.apple.com/in/app/easemytrip-flight-booking/id1053030595
+            - img "app-store-icon"
+        - generic [ref=e992]:
+          - img "app-qrcode"
+  - generic [ref=e993]:
+    - generic [ref=e994]:
+      - generic [ref=e995]:
+        - heading "Cheapest Deals on Budget & Luxury Hotels are Available at EaseMyTrip" [level=2] [ref=e996]
+        - paragraph [ref=e997]: Due to the huge influx of tourists in India, EaseMyTrip offers a wide range of luxury, deluxe and budget hotels to them. Choose to stay in luxury and comfort with the greatest discounts available on hotel bookings. We list the classiest budget hotels on our site along with some of the prominent international hotel chains of India including Oberoi Group, ITC Group, Taj Group, Le Meridian Group and many others. Ranging from class hotels to luxury beach resorts, each hotel on our site gives you a memorable staying experience. Along with deluxe, budget and luxury hotels, EaseMyTrip also displays a number of heritage hotels that offer you a royal stay. Enjoy cheap hotel deals for any destination with great savings.
+        - paragraph
+      - img "Luxurious Hotel" [ref=e999]
+    - button "Read More" [ref=e1001] [cursor=pointer]
+  - generic [ref=e1002]:
+    - heading "Why Book Hotels with EaseMyTrip.com?" [level=2] [ref=e1004]
+    - generic [ref=e1005]:
+      - generic [ref=e1006]:
+        - generic [ref=e1007]:
+          - img "extensive-hotel-options"
+        - generic [ref=e1008]: Extensive Hotel Options
+        - generic [ref=e1009]: Best hotels available for different destinations to offer you the stay of a lifetime.
+      - generic [ref=e1010]:
+        - generic [ref=e1011]:
+          - img "saving-on-hotel-booking"
+        - generic [ref=e1012]: Savings on Hotel Booking
+        - generic [ref=e1013]: Enjoy hotel bookings with the best offers and discounts and make your stay unforgettable.
+      - generic [ref=e1014]:
+        - generic [ref=e1015]:
+          - img "hotel-ratings"
+        - generic [ref=e1016]: Hotel Ratings
+        - generic [ref=e1017]: All our hotels have good ratings on Trip Advisor and are recommended by users.
+      - generic [ref=e1018]:
+        - generic [ref=e1019]:
+          - img "best-price"
+        - generic [ref=e1020]: Best Price
+        - generic [ref=e1021]: Get excellent hotels/resorts at the best prices to pamper your desires.
+  - generic [ref=e1022]:
+    - heading "FAQ's" [level=2] [ref=e1024]
+    - generic [ref=e1025]:
+      - heading "How can I save while booking hotels?" [level=3] [ref=e1027] [cursor=pointer]
+      - heading "Can I book a hotel with a local id?" [level=3] [ref=e1029] [cursor=pointer]
+      - heading "How can I get early check-in or late check-out in a hotel?" [level=3] [ref=e1031] [cursor=pointer]
+      - heading "How can unmarried couples book hotels in india?" [level=3] [ref=e1033] [cursor=pointer]
+      - heading "How can I book cheap hotel rooms in 5 star hotels?" [level=3] [ref=e1035] [cursor=pointer]
+      - heading "How to book hotel online?" [level=3] [ref=e1037] [cursor=pointer]
+  - generic [ref=e1039]:
+    - generic [ref=e1042]:
+      - generic [ref=e1043]:
+        - list [ref=e1045]:
+          - button "OUR OFFERINGS" [ref=e1046] [cursor=pointer]
+          - button "QUICK LINKS" [ref=e1047] [cursor=pointer]
+          - button "POPULAR DESTINATION" [ref=e1048] [cursor=pointer]
+          - button "INTERNATIONAL DESTINATION" [ref=e1049] [cursor=pointer]
+          - button "POPULAR AIRLINE" [ref=e1050] [cursor=pointer]
+          - button "CONNECT WITH US" [ref=e1051] [cursor=pointer]
+          - button "OFFERS" [ref=e1052] [cursor=pointer]
+          - button "EMT INSIGHTS" [ref=e1053] [cursor=pointer]
+          - button "MEDIA" [ref=e1054] [cursor=pointer]
+          - link "INVESTOR RELATIONS" [ref=e1055] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/investor-relations.html
+          - link "CURRENT OPENINGS" [ref=e1056] [cursor=pointer]:
+            - /url: https://www.easemytrip.com/career.html
+        - generic [ref=e1058]:
+          - paragraph [ref=e1059]: Make your travel easy with a wide range of products and services.
+          - list [ref=e1061]:
+            - listitem [ref=e1062]:
+              - link "Flight" [ref=e1063] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/flights/
+            - listitem [ref=e1064]:
+              - link "Hotels" [ref=e1065] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/hotels/
+            - listitem [ref=e1066]:
+              - link "Trains" [ref=e1067] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/railways/
+            - listitem [ref=e1068]:
+              - link "Holidays" [ref=e1069] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/holidays/
+            - listitem [ref=e1070]:
+              - link "Bus" [ref=e1071] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/bus/
+            - listitem [ref=e1072]:
+              - link "Flight Status" [ref=e1073] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/flights/flight-status/
+            - listitem [ref=e1074]:
+              - link "Cabs" [ref=e1075] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/cabs/
+            - listitem [ref=e1076]:
+              - link "Airlines" [ref=e1077] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/directory/airlines.html
+            - listitem [ref=e1078]:
+              - link "Airports" [ref=e1079] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/directory/airports-in-india.html
+            - listitem [ref=e1080]:
+              - link "Travel Guides" [ref=e1081] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/travel-guides.html
+            - listitem [ref=e1082]:
+              - link "Check PNR Status" [ref=e1083] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/railways/pnr-status/
+            - listitem [ref=e1084]:
+              - link "EMT PRO" [ref=e1085] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/emtpro
+            - listitem [ref=e1086]:
+              - link "Activities" [ref=e1087] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/activities/
+            - listitem [ref=e1088]:
+              - link "Travel Updates" [ref=e1089] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/travel-updates.html
+            - listitem [ref=e1090]:
+              - link "Corporate travel" [ref=e1091] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/corporate
+            - listitem [ref=e1092]:
+              - link "Blog" [ref=e1093] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/blog/
+            - listitem [ref=e1094]:
+              - link "Flight Check-in" [ref=e1095] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/flights/web-check-in/
+            - listitem [ref=e1096]:
+              - link "VIP Cabs" [ref=e1097] [cursor=pointer]:
+                - /url: https://www.easemytrip.com/bookvipcabs.html
+      - generic [ref=e1098]:
+        - generic [ref=e1099]:
+          - generic [ref=e1100]:
+            - img "EaseMyTrip.com"
+          - paragraph [ref=e1102]: EaseMyTrip offers 'End to End' travel solutions including air tickets for more than 400 international and domestic airlines, hotel bookings for nearly 1 million hotels in India and abroad, cab booking with 4000+ cab operators, bus tickets with 2000+ bus operators, and railway tickets in India for all major cities.
+        - generic [ref=e1103]:
+          - generic [ref=e1104]: DOWNLOAD EASEMYTRIP APP
+          - generic [ref=e1106]:
+            - link "Download on Android" [ref=e1108] [cursor=pointer]:
+              - /url: //play.google.com/store/apps/details?id=com.easemytrip.android
+              - img "Download on Android"
+            - link "Download on IOS" [ref=e1110] [cursor=pointer]:
+              - /url: https://itunes.apple.com/in/app/easemytrip-flight-booking/id1053030595?mt=8
+              - img "Download on IOS"
+        - generic [ref=e1111]:
+          - generic [ref=e1112]: SCAN QR CODE
+          - generic [ref=e1115]:
+            - img
+    - generic [ref=e1116]:
+      - generic [ref=e1117]: Copyright © 2026 EaseMyTrip
+      - generic [ref=e1118]:
+        - img
+```
+
+# Test source
+
+```ts
+  1  | import { Page } from '@playwright/test';
+  2  | /**
+  3  |  * BasePage
+  4  |  * All Page Object classes extend this. Provides common helpers
+  5  |  * (navigate, waitForPageLoad) and holds the `page` reference.
+  6  |  */
+  7  | export class BasePage {
+  8  |   protected page: Page;//store browser page here [protected means child cls use it]
+  9  | 
+  10 |   constructor(page: Page) {
+  11 |     this.page = page;
+  12 |   }
+  13 | 
+  14 |   async navigate(path: string = ''): Promise<void> {
+> 15 |     await this.page.goto(path);
+     |                     ^ Error: page.goto: Test timeout of 30000ms exceeded.
+  16 |   }
+  17 | 
+  18 |   async waitForPageLoad(): Promise<void> {
+  19 |     await this.page.waitForLoadState('domcontentloaded');
+  20 |   }
+  21 | 
+  22 |   async getTitle(): Promise<string> {
+  23 |     return this.page.title();
+  24 |   }
+  25 | }
+  26 | //page -> browser tab
+  27 | //class -> blue print of object
+  28 | //protected ->accessible in child class but not outside
+  29 | //constructor -> initalize the object
+  30 | //async/await -> handleasynchronous operations like page navigate,elements interactions
+  31 | //promise<void> -> no return value
+  32 | //promise<string> -> returns text
+  33 | //this.page ->refers to page/browser instance passed to constructor,used for all interactions in page ojects.
+```

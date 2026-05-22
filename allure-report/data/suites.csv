@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","13992","Test Case 1 - Navigation and Gift Card Form Fill","","2026-05-14","passed","2026-05-14","Scenario 2 - Gift Card Purchase","scenario2.spec.ts","",""
+"","17252","Test Case 3 - Search Filter and Price Display","","2026-05-14","passed","2026-05-14","Scenario 1 - Outstation Cab Booking","scenario1.spec.ts","",""
+"","9946","Test Case 1 - Page Load and Outstation Tab Selection","","2026-05-14","passed","2026-05-14","Scenario 1 - Outstation Cab Booking","scenario1.spec.ts","",""
+"","12788","Test Case 1 - Navigate, Open Room Selector and Verify Adult Label","","2026-05-14","passed","2026-05-14","Scenario 3 - Hotel Room Selector","scenario3.spec.ts","",""
+"","12835","Test Case 2 - Submit and Error Message Validation","","2026-05-14","passed","2026-05-14","Scenario 2 - Gift Card Purchase","scenario2.spec.ts","",""
+"","13223","Test Case 2 - From To Location and Date Time Selection","","2026-05-14","passed","2026-05-14","Scenario 1 - Outstation Cab Booking","scenario1.spec.ts","",""
+"","11273","Test Case 2 - Extract All Adult Values by Incrementing","","2026-05-14","passed","2026-05-14","Scenario 3 - Hotel Room Selector","scenario3.spec.ts","",""
